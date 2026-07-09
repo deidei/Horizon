@@ -5,288 +5,289 @@ date: 2026-07-09
 lang: zh
 ---
 
-> 从 36 条内容中筛选出 12 条重要资讯。
+> 从 40 条内容中筛选出 15 条重要资讯。
 
 ---
 
-1. [TypeScript 7.0 用 Go 重写，构建速度提升 12 倍](#item-1) ⭐️ 9.0/10
-2. [FTC 协议要求约翰迪尔允许用户自行维修设备](#item-2) ⭐️ 8.0/10
-3. [OpenAI 分析揭示编程基准测试中的噪音问题](#item-3) ⭐️ 8.0/10
-4. [Bun 借助 AI 将运行时代码从 Zig 重写为 Rust](#item-4) ⭐️ 8.0/10
-5. [SpaceXAI 发布 Grok 4.5：更快、更便宜、达到 Opus 水平的 AI 模型](#item-5) ⭐️ 8.0/10
-6. [解码优衣库 T 恤上的混淆 Bash 脚本](#item-6) ⭐️ 8.0/10
-7. [Cloudflare Meerkat：首个生产级异步共识算法](#item-7) ⭐️ 8.0/10
-8. [OpenAI 推出 GPT-Live，升级 ChatGPT 语音模式](#item-8) ⭐️ 8.0/10
-9. [灵波视频：开源稀疏 MoE 视频扩散变换器](#item-9) ⭐️ 8.0/10
-10. [美团 OWL 模型对话数据疑似泄露于 GitHub](#item-10) ⭐️ 8.0/10
-11. [通过泄漏电磁信号识别手机应用，准确率达 99%](#item-11) ⭐️ 8.0/10
-12. [LineageOS 推出浏览器刷机工具](#item-12) ⭐️ 8.0/10
+1. [OpenAI 发布 GPT-5.6 三个版本，Sol 在 ARC-AGI-3 上达到 SOTA](#item-1) ⭐️ 10.0/10
+2. [使用 AI 将 Bun 从 Zig 重写为 Rust](#item-2) ⭐️ 9.0/10
+3. [TypeScript 7.0 发布：Go 重写带来高达 12 倍速度提升](#item-3) ⭐️ 9.0/10
+4. [蚂蚁开源 LingBot-Video，全球首个 MoE 具身视频基模](#item-4) ⭐️ 9.0/10
+5. [欧盟议会通过 Chat Control 1.0，程序性操作引发争议](#item-5) ⭐️ 8.0/10
+6. [用 Rust 重写的 PostgreSQL 通过全部回归测试](#item-6) ⭐️ 8.0/10
+7. [美国陆军后勤脆弱性分析](#item-7) ⭐️ 8.0/10
+8. [Meta 推出 Muse Spark 1.1 及商业 API](#item-8) ⭐️ 8.0/10
+9. [AI 内容充斥社交媒体，尤其是 LinkedIn](#item-9) ⭐️ 8.0/10
+10. [OpenAI 推出 GPT‑Live 语音模式，可委托 GPT‑5.5 处理复杂任务](#item-10) ⭐️ 8.0/10
+11. [Meta 超级智能更新：RL 初创公司及算力扩展](#item-11) ⭐️ 8.0/10
+12. [IMGNet：用符号模式替代余弦相似度的人脸验证模型](#item-12) ⭐️ 8.0/10
+13. [大疆 EV50 无人机飞越珠峰 8861 米](#item-13) ⭐️ 8.0/10
+14. [国家超算互联网核心节点在郑州上线](#item-14) ⭐️ 8.0/10
+15. [OpenAI 与美国战争部拟禁 AI 监控公民](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [TypeScript 7.0 用 Go 重写，构建速度提升 12 倍](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/) ⭐️ 9.0/10
+## [OpenAI 发布 GPT-5.6 三个版本，Sol 在 ARC-AGI-3 上达到 SOTA](https://openai.com/index/gpt-5-6/) ⭐️ 10.0/10
 
-微软正式发布 TypeScript 7.0，这是一个用 Go 语言重写的主版本，相比 TypeScript 6，构建速度最高提升 12 倍，例如 vscode 的构建时间从 125.7 秒降至 10.6 秒。 这一性能提升大幅减少了大型代码库的开发者等待时间，使 TypeScript 更适用于庞大项目，并可能加速 CI/CD 流水线，同时展示了用底层语言重写性能关键的编译器所带来的好处。 新版本引入了 --checkers 和 --builders 参数以自定义并行度，并提供了兼容包以便与 TypeScript 6 并存；但 Vue、Svelte 等嵌入式语言的工具链尚未就绪，目前仍需使用旧版本。
+OpenAI 宣布 GPT-5.6 系列全面可用，包括 Luna、Terra 和 Sol 三个模型。其中最大的 Sol 版本在 ARC-AGI-3 基准测试中以 7.8%的得分创下新纪录，成为首个通过验证的、成功解决 ARC-AGI-3 游戏的前沿模型。 此次发布标志着 AI 推理能力的重大飞跃，尤其是 Sol 在 ARC-AGI-3 上的突破——该基准专为衡量类人交互智能而设计。分层定价模式（Luna、Terra、Sol）让高级 AI 更易获取，同时为高要求任务提供高端选择，其强劲表现很可能提高竞争对手的门槛。 三个版本的定价为每百万输入/输出 token：Luna $1/$6，Terra $2.50/$15，Sol $5/$30。Sol 消耗大量计算资源——在 Plus 计划中，一次复杂查询可能用掉 5 小时配额的 95%。该模型系列还改进了意图理解，并保留原始图像尺寸。
 
-hackernews · DanRosenwasser · 7月8日 16:06 · [社区讨论](https://news.ycombinator.com/item?id=48833715)
+hackernews · logickkk1 · 7月9日 17:04 · [社区讨论](https://news.ycombinator.com/item?id=48849066)
 
-**背景**: TypeScript 是 JavaScript 的超集，它添加了静态类型，帮助开发者早期捕获错误。此前，TypeScript 编译器是用 TypeScript 自身编写的，这限制了其在大型代码库上的性能。用 Go 重写使其能够利用原生编译和多线程，从而实现了本次发布中显著的性能提升。
+**背景**: GPT-5.6 是 OpenAI 最新的旗舰模型系列，接替 GPT-5。它分为三个版本：Luna（最快/最便宜）、Terra（中端）和 Sol（最强）。ARC-AGI-3 是一个交互式推理基准，挑战 AI 代理探索新环境、推断目标并有效规划。分层定价模式也沿用了 Anthropic 和 Google 的类似策略。
 
-**社区讨论**: 评论称赞团队取得的成就，用户分享了基准测试数据并对速度提升表示兴奋。一些用户表示仍然喜欢 JSDoc 类型语法，另一些则开玩笑期待 Rust 重写版本。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://openai.com/index/previewing-gpt-5-6-sol/">Previewing GPT‑5.6 Sol: a next-generation model - OpenAI</a></li>
+<li><a href="https://andrew.ooo/answers/gpt-5-6-sol-vs-terra-vs-luna-tiered-model-explained-july-2026/">GPT-5.6 Sol vs Terra vs Luna: OpenAI's New Tier Explained</a></li>
+<li><a href="https://arcprize.org/arc-agi/3">ARC-AGI-3</a></li>
 
-**标签**: `#TypeScript`, `#performance`, `#Go`, `#compiler`, `#programming languages`
+</ul>
+</details>
+
+**社区讨论**: 社区反应总体积极但意见不一。用户注意到 Sol 的高配额消耗（ekzy 报告一次查询消耗 95%），并分享了开发者指南中的实用技巧。一些人讨论与其他模型（如 Claude Code）的比较，一位评论者指出 OpenAI 在某些基准中省略了与 Fable 5 的比较，因其拒绝回答问题。总体而言，此次发布引发了大量讨论（939 分，703 条评论），证实了其重要性。
+
+**标签**: `#GPT-5.6`, `#OpenAI`, `#AI`, `#large language models`, `#ARC-AGI`
 
 ---
 
 <a id="item-2"></a>
-## [FTC 协议要求约翰迪尔允许用户自行维修设备](https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02) ⭐️ 8.0/10
+## [使用 AI 将 Bun 从 Zig 重写为 Rust](https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything) ⭐️ 9.0/10
 
-美国联邦贸易委员会（FTC）已与约翰迪尔达成和解，要求该公司允许农民和独立维修店修理迪尔设备。该和解结束了多年来迪尔限制诊断软件和维修工具使用的做法。 这一和解是维修权运动的重要胜利，赋予农民自行修理拖拉机的权利，减少了对昂贵经销商维修的依赖。它可能为电子、汽车等其他存在类似限制的行业树立先例。 约翰迪尔需向五个州共同支付 100 万美元的反垄断执法费用，并接受为期十年的合规监督。该和解特别针对此前阻止车主未经经销商授权诊断和修复问题的软件锁。
+Jarred Sumner 宣布，JavaScript 运行时 Bun 已借助 AI 编程智能体从 Zig 重写为 Rust。基于 Rust 的新版本自 2026 年 6 月 17 日起已在 Claude Code v2.1.181 中投入使用，Linux 上启动速度提升了 10%。 此次重写挑战了长久以来“大型软件不应重写”的观念，证明了 AI 智能体可以使此类项目变得可行且经济高效。它还提升了 Bun 的可靠性，解决了大量与内存相关的错误，惠及其庞大的用户群体。 重写耗时 11 天，花费约 16.5 万美元的 AI API 令牌，使用了 59 亿未缓存输入令牌和 6.9 亿输出令牌。Bun 的 TypeScript 测试套件作为一致性测试套件来验证移植，此次移植新增了超过 100 万行代码。
 
-hackernews · djoldman · 7月8日 23:37 · [社区讨论](https://news.ycombinator.com/item?id=48838876)
+rss · Simon Willison · 7月8日 23:57
 
-**背景**: 现代拖拉机包含精密的计算机系统，控制从发动机正时到 GPS 导航的方方面面。约翰迪尔等制造商利用数字版权管理（DRM）锁定这些系统，迫使农民只能依赖授权经销商进行维修。这种做法导致农民自行破解设备或从海外购买非法诊断工具。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://pirg.org/resources/john-deere-and-right-to-repair-over-the-years/">John Deere and Right to Repair over the years - pirg.org</a></li>
-<li><a href="https://copperhilltech.com/blog/farmers-are-hacking-their-tractors-because-of-a-right-to-repair-ban/">Farmers Are Hacking Their Tractors Because of a Right to Repair Ban</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 评论赞扬了路易斯·罗斯曼等活动家在维修权运动中的贡献。有人批评 100 万美元罚款相对于迪尔的利润微不足道，也有人讨论了这对科技公司和消费者权利的广泛影响。
-
-**标签**: `#right-to-repair`, `#consumer rights`, `#agriculture technology`, `#FTC`, `#regulatory policy`
-
----
-
-<a id="item-3"></a>
-## [OpenAI 分析揭示编程基准测试中的噪音问题](https://openai.com/index/separating-signal-from-noise-coding-evaluations/) ⭐️ 8.0/10
-
-OpenAI 发布分析报告，指出流行的编程基准测试 SWE-Bench Pro 存在大量噪音，许多任务规格不完整或自相矛盾，并提出了改进评估可靠性的方法。 准确的编程评估对于安全部署 AI 模型至关重要，有缺陷的基准测试可能会误导对模型能力的判断，进而影响整个 AI 行业的开发和安全决策。 OpenAI 团队手动审查了 SWE-Bench Pro 中全部 798 个任务，发现 48%存在问题，包括缺失测试、需求模糊或真实解决方案中存在错误，导致模型性能被高估。
-
-hackernews · sk4rekr0w · 7月8日 21:03 · [社区讨论](https://news.ycombinator.com/item?id=48837396)
-
-**背景**: SWE-Bench Pro 是一个旨在评估 AI 模型在真实软件工程任务（如修复漏洞或实现功能）上表现的基准测试。信噪比概念源自工程学，用于描述评估结果中有意义数据（信号）与无关或误导数据（噪音）的比例。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://openai.com/index/separating-signal-from-noise-coding-evaluations/">Separating signal from noise in coding evaluations - OpenAI</a></li>
-<li><a href="https://judyailab.com/en/posts/ai-news-20260709-separating-signal-from-noise-in-coding-evaluations/">How to Distinguish Real Capability from Noise in Code Evaluations</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Signal-to-noise_ratio">Signal-to-noise ratio - Wikipedia</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 评论者表达了怀疑态度，指出基准测试的缺陷早已知晓但被低估，并呼吁采用结合效率与智能的新指标，例如衡量每单位 API 花费的成果。其他人还指出了作弊和硬件配置操纵等问题。
-
-**标签**: `#AI evaluation`, `#coding benchmarks`, `#OpenAI`, `#machine learning`, `#benchmark reliability`
-
----
-
-<a id="item-4"></a>
-## [Bun 借助 AI 将运行时代码从 Zig 重写为 Rust](https://bun.com/blog/bun-in-rust) ⭐️ 8.0/10
-
-流行的 JavaScript 运行时 Bun 借助 AI 工具 Fable 和 Claude Code，将其核心运行时代码从 Zig 重写为 Rust，实现了 20% 的二进制文件缩小、稳定性提升以及 5% 的性能改进。 此次重写展示了 AI 辅助代码翻译在大幅降低工程成本和时间方面的潜力，同时也引发了关于语言选择以及高性能运行时的系统编程未来的讨论。 该项目由一位工程师使用 Fable（自动翻译管道）和 Claude Code 进行代码审查和修复，在更短的时间内完成了一个工程团队可能需要一年才能完成的工作。
-
-hackernews · afturner · 7月8日 21:49 · [社区讨论](https://news.ycombinator.com/item?id=48837877)
-
-**背景**: Bun 是一个快速的一体化 JavaScript 运行时，用于捆绑、安装和运行 JavaScript 和 TypeScript。它最初使用 Zig 编写，Zig 是一种旨在改进 C 语言的系统编程语言。Rust 则是另一种注重内存安全和并发性且无需垃圾回收的系统语言。
+**背景**: Bun 是一个一体化 JavaScript 运行时和工具集，旨在作为 Node.js 的快速替代品。它最初用 Zig 编写，Zig 是一种专注于健壮性和性能的低级系统编程语言。Rust 是另一种系统语言，通过其所有权模型提供内存安全保证，有助于防止困扰 Zig 版本的使用后释放和双重释放错误。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Bun_(software)">Bun (software) - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Zig_(programming_language)">Zig (programming language)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Zig_(programming_language)">Zig (programming language) - Wikipedia</a></li>
 <li><a href="https://github.com/oven-sh/bun">GitHub - oven-sh/bun: Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者们讨论了这一事件对 Zig 的影响，一些人指出从 Zig 的简单重写就修复了内存泄漏并提高了稳定性，这对 Zig 的声誉不利。其他人则强调了使用 AI 而非雇佣工程师的成本效益，而有些人批评了过渡的处理方式，例如放弃对 Zig 版本的修复。
-
-**标签**: `#Rust`, `#Zig`, `#AI-assisted development`, `#JavaScript runtime`, `#software engineering`
+**标签**: `#Bun`, `#Rust`, `#Zig`, `#JavaScript runtime`, `#programming languages`
 
 ---
 
-<a id="item-5"></a>
-## [SpaceXAI 发布 Grok 4.5：更快、更便宜、达到 Opus 水平的 AI 模型](https://x.ai/news/grok-4-5) ⭐️ 8.0/10
+<a id="item-3"></a>
+## [TypeScript 7.0 发布：Go 重写带来高达 12 倍速度提升](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/) ⭐️ 9.0/10
 
-SpaceXAI 发布了 Grok 4.5，这是一款新型 AI 模型，其推理效率比 Opus 提升 4 倍，而成本仅为每百万输入令牌 2 美元、每百万输出令牌 6 美元。 Grok 4.5 卓越的令牌效率和更低的价格可能颠覆 AI 市场，但有关 xAI 可信度的伦理担忧可能阻碍其在敏感商业应用中的采用。 Grok 4.5 是一款“Opus 级别模型”，比竞争对手更快、令牌效率更高；它基于数万亿令牌的 Cursor 数据训练而成，这些数据捕获了真实的开发者交互。
+微软正式发布了 TypeScript 7.0，用 Go 语言完全重写了原来的 JavaScript 编译器，支持真正的多线程编译，构建速度提升 8 到 12 倍。开发者可通过 npm 安装，主流编辑器通过 LSP 支持新的语言服务器。 这一性能突破大幅减少了大型 TypeScript 代码库的编译时间，提升了开发者的生产力和 CI/CD 管道的效率。同时，它为用底层语言重写核心开发者工具以提高性能树立了先例。 新版本引入了 --checkers 和 --builders 参数以自定义并行度，并提供了兼容包以便与 TypeScript 6 共存。但由于 API 尚未就绪，Vue、Svelte 等嵌入式语言工具链目前仍需要使用旧版本。
 
-hackernews · BoumTAC · 7月8日 18:00 · [社区讨论](https://news.ycombinator.com/item?id=48835111)
+telegram · zaihuapd · 7月9日 04:01
 
-**背景**: Grok 4.5 是 xAI 的最新型号，xAI 由埃隆·马斯克于 2023 年创立，后来被 SpaceX 收购成为 SpaceXAI。该模型利用了被 SpaceXAI 收购的 AI 编码初创公司 Cursor 的数据，以增强编码和代理任务的能力。令牌效率指模型每令牌生成更有用输出的能力，从而降低用户的总体成本。
+**背景**: TypeScript 是 JavaScript 的超集，增加了静态类型，其编译器原本用 JavaScript 编写。用 Go 重写编译器可以利用原生多线程和更好的内存管理，从而大幅提升速度。语言服务器协议（LSP）标准化了编辑器与语言服务器之间的通信，使主流 IDE 都能获得一致的支持。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://x.ai/news/grok-4-5">Introducing Grok 4.5 | SpaceXAI</a></li>
-<li><a href="https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/">SpaceXAI releases Grok 4.5, which Elon describes as an 'Opus-class model' | TechCrunch</a></li>
-<li><a href="https://www.axios.com/2026/07/08/spacexai-grok-new-model">Scoop: SpaceXAI launches new model, Grok 4.5</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Language_Server_Protocol">Language Server Protocol - Wikipedia</a></li>
+<li><a href="https://visualstudiomagazine.com/articles/2026/06/22/typescript-7-0-rc-moves-microsofts-go-rewrite-into-the-mainline-compiler.aspx">TypeScript 7.0 RC Moves Microsoft's Go Rewrite Into the Mainline Compiler -- Visual Studio Magazine</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区反应不一：一些人称赞 Grok 4.5 的速度和成本效益，而另一些人则因 xAI 的政治倾向和伦理问题（如对儿童性虐待材料审核不足）表示不信任。技术用户将其在基准测试上与 GPT 和 Opus 进行有利比较。
-
-**标签**: `#AI`, `#LLM`, `#Grok`, `#xAI`, `#machine learning`
+**标签**: `#TypeScript`, `#compiler`, `#performance`, `#Microsoft`, `#Go`
 
 ---
 
-<a id="item-6"></a>
-## [解码优衣库 T 恤上的混淆 Bash 脚本](https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores/) ⭐️ 8.0/10
+<a id="item-4"></a>
+## [蚂蚁开源 LingBot-Video，全球首个 MoE 具身视频基模](https://www.qbitai.com/2026/07/446458.html) ⭐️ 9.0/10
 
-Tristan Sherliker 的博客文章解码了印在优衣库 T 恤上的混淆 bash 脚本，发现它是一个自我求值的脚本，运行后会打印一个数学公式。 这个例子展示了 bash 中巧妙的混淆技术，引发了社区关于代码美学、字体排印以及编程与时尚交叉的讨论。 该脚本使用了 bash 混淆中常见的自我求值技术，衬衫上的字体是 Roboto Mono，并采用了光学字距调整，使得 OCR 识别困难。
+蚂蚁集团旗下灵波（LingBot）开源了 LingBot-Video，这是全球首个基于混合专家架构的具身视频基础模型，总参数量 300 亿，推理时仅激活 30 亿参数。 这是具身 AI 和机器人领域的重要里程碑，该开源模型能生成面向机器人操作的视频，加速仿真、世界模型和策略学习等方向的研究。 LingBot-Video 采用 DiT+MoE 架构，构建了包含 7 万小时具身数据的画像引擎，并引入多维强化学习奖励系统，重点关注物理合理性和任务完成度。
 
-hackernews · speerer · 7月8日 08:46 · [社区讨论](https://news.ycombinator.com/item?id=48829312)
+telegram · zaihuapd · 7月9日 04:30
 
-**背景**: Bash 混淆是指故意使 shell 脚本难以阅读，通常通过编码、压缩或变量替换来实现。自我求值脚本会在运行时构建并执行代码。这款与 Akamai 合作的优衣库 T 恤将脚本作为时尚宣言印在衣服上。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://vuink.com/post/gevf-d-dfureyvxre-d-darg/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores">Obfuscated, self-evaluating bash script by CDN Akamai being ...</a></li>
-<li><a href="https://github.com/Bashfuscator/Bashfuscator">GitHub - Bashfuscator/Bashfuscator: A fully configurable and ...</a></li>
-<li><a href="https://www.baeldung.com/linux/bash-obfuscate-script">How to Obfuscate a Bash Script to Make It Unreadable - Baeldung</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 评论者称赞了设计的巧妙。有人指出字体是 Roboto Mono 但字距调整是光学的，破坏了等宽一致性。其他人分享了类似作品，比如 Martin Kleppe 的 Quine Clock。还有关于 OCR 难度的讨论，以及好奇原始脚本是否由 LLM 编写。
-
-**标签**: `#obfuscation`, `#bash`, `#hackernews`, `#t-shirt`, `#Uniqlo`
-
----
-
-<a id="item-7"></a>
-## [Cloudflare Meerkat：首个生产级异步共识算法](https://blog.cloudflare.com/meerkat-introduction/) ⭐️ 8.0/10
-
-Cloudflare Research 推出了基于 QuePaxa 算法的全球分布式共识服务 Meerkat，这是首个生产级实现的异步无领导共识协议。该服务旨在为键值存储等应用提供强一致性和容错能力。 这标志着异步共识——无需依赖超时并能容忍极端网络延迟——从研究走向实际部署的重要一步。它可能提升那些在恶劣网络条件下难以使用 Raft 等基于领导者的协议的全球分布式系统的可靠性。 Meerkat 使用 QuePaxa，该算法通过 hedging（向多个提议者发送冗余提议）来在无超时情况下保持活性，即使在网络分区或延迟下也能推进。但每次读取操作都需要全局共识，这可能会增加读取延迟，相比优化本地读取的系统有所妥协。
-
-hackernews · bobnamob · 7月8日 13:18 · [社区讨论](https://news.ycombinator.com/item?id=48831565)
-
-**背景**: 生产环境中大多数共识算法（如 Paxos 和 Raft）都是部分同步的：它们依赖超时检测故障，并假设网络延迟有界。像 QuePaxa 这样的异步共识算法完全避免超时，因此在无限延迟下依然稳健，但历史上因效率低而不实用。QuePaxa 在 SOSP 2023 上发表，引入了自适应 hedging 等技术，在正常情况下的性能具有竞争力，同时在最坏情况下保持韧性。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://blog.cloudflare.com/meerkat-introduction/">Introducing Meerkat: an experiment in global consensus</a></li>
-<li><a href="https://bford.info/pub/os/quepaxa/quepaxa.pdf">QuePaxa: Escaping the Tyranny of Timeouts in Consensus QuePaxa: Escaping the Tyranny of Timeouts in Consensus GitHub - dedis/quepaxa: This is the code repository for ... QuePaxa: Escaping the Tyranny of Timeouts in Consensus Post by @cloudflare.social — Bluesky Artifact Review Summary: QuePaxa: Escaping the tyranny of ...</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 评论者指出，将无领导的 Meerkat 与基于领导者的 Raft 进行比较有些令人困惑，并强调了 QuePaxa 异步特性的新颖性。部分人质疑每次读取都要共识的权衡，而另一些人则认为这对网络混乱、以领导者协议易受影响的环境很有价值。
-
-**标签**: `#distributed systems`, `#consensus algorithms`, `#Cloudflare`, `#QuePaxa`, `#asynchronous consensus`
-
----
-
-<a id="item-8"></a>
-## [OpenAI 推出 GPT-Live，升级 ChatGPT 语音模式](https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything) ⭐️ 8.0/10
-
-OpenAI 宣布推出 GPT-Live，这是一个为 ChatGPT 语音模式提供支持的新模型，它可以在后台将复杂任务委托给 GPT-5.5，同时保持对话流畅。 这次升级显著提高了 ChatGPT 语音模式的实用性，使其能够进行实时、自然的对话，同时处理网络搜索、推理等复杂任务而不中断。 GPT-Live 目前在 iPhone 应用中可用，使用 GPT-5.5 作为其前沿模型，并计划随着新模型的发布持续更新。有用户报告了一个不恰当笑声的 bug，据称已修复。
-
-rss · Simon Willison · 7月8日 23:20
-
-**背景**: ChatGPT 之前的语音模式基于较旧的 GPT-4o 时代模型，知识截止于 2024 年，限制了其用途。GPT-Live 代表了新一代语音模型，旨在实现更自然的人机交互，能够通过将复杂查询卸载给更强大的模型（如 GPT-5.5）来执行多任务。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://openai.com/index/introducing-gpt-live/">Introducing GPT-Live | OpenAI</a></li>
-<li><a href="https://en.wikipedia.org/wiki/GPT-5.5">GPT-5.5</a></li>
-<li><a href="https://openai.com/index/introducing-gpt-5-5/">Introducing GPT‑5.5 - OpenAI</a></li>
-
-</ul>
-</details>
-
-**标签**: `#OpenAI`, `#GPT-Live`, `#ChatGPT`, `#voice mode`, `#AI update`
-
----
-
-<a id="item-9"></a>
-## [灵波视频：开源稀疏 MoE 视频扩散变换器](https://www.reddit.com/r/MachineLearning/comments/1ur0bxq/lingbotvideo_sparsemoe_video_diffusion/) ⭐️ 8.0/10
-
-灵波视频是一个 13B 参数（1.4B 激活）的稀疏混合专家视频扩散变换器，采用强化学习后训练，使用 VLM 评分的物理合理性奖励。它以开源形式发布，包含权重、代码和 Diffusers/SGLang 栈，并具有用于机器人滚动预测的动作到视频模式。 该模型代表了机器人开源视频生成的重要一步，结合了稀疏 MoE 效率和基于强化学习的物理合理性奖励。然而，它也提出了关键问题：VLM 评分的奖励能否可靠地判断物理合理性？仅靠视频生成是否能作为真正的机器人策略世界模型？ 灵波视频采用单流扩散变换器，具有 DeepSeek-V3 风格的稀疏 MoE（128 个专家，前 8 路由）。它使用六种奖励进行后训练，包括由 VLM 从采样帧评分的物理合理性奖励，并添加真实视频负样本以防止奖励破解。
-
-reddit · r/MachineLearning · /u/Savings-Display5123 · 7月8日 17:58
-
-**背景**: 混合专家（MoE）是一种技术，模型使用多个专门的子网络（专家）和路由机制，每个输入只激活一部分专家，从而实现更大的总容量和更低的计算成本。稀疏 MoE 如 DeepSeek-V3，每个令牌只激活一部分专家。动作条件世界模型根据机器人动作预测未来视频帧，充当机器人领域的规划器或评估器。灵波视频被定位为此类模型，但只展示了视频生成结果，没有闭环机器人评估。
+**背景**: 混合专家（MoE）是一种神经网络设计，每个输入只激活部分参数，使大模型能够高效推理。扩散 Transformer（DiT）将 Transformer 架构应用于扩散生成模型。具身 AI 旨在创建能理解并与物理世界交互的模型，常用于机器人领域。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Mixture_of_experts">Mixture of experts - Wikipedia</a></li>
 <li><a href="https://huggingface.co/blog/moe">Mixture of Experts Explained</a></li>
-<li><a href="https://arxiv.org/abs/2606.04463">OSCAR: Omni-Embodiment Action-Conditioned World Model for ...</a></li>
+<li><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Peebles_Scalable_Diffusion_Models_with_Transformers_ICCV_2023_paper.pdf">Scalable Diffusion Models with Transformers William Peebles* UC Berkeley</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Reddit 帖子作者邀请批评，特别质疑 VLM 能否成为物理合理性的可靠评判者，还是会导致奖励破解，以及在没有闭环机器人数据的情况下，视频生成器和世界模型之间的界限在哪里。作者表达了希望社区对这些问题的看法。
+**标签**: `#AI`, `#Embodied AI`, `#MoE`, `#Video Generation`, `#Open Source`
 
-**标签**: `#video diffusion`, `#sparse MoE`, `#reinforcement learning`, `#world model`, `#open source`
+---
+
+<a id="item-5"></a>
+## [欧盟议会通过 Chat Control 1.0，程序性操作引发争议](https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/) ⭐️ 8.0/10
+
+欧洲议会未获明确多数支持便通过了 Chat Control 1.0，允许对 Gmail、Snapchat 等服务的私密消息进行大规模扫描，有效期至 2028 年。 这为欧盟数字权利开创了危险先例，立法可通过程序性操作强行通过，削弱了民主制衡。同时威胁到主要平台的用户隐私。 该法律仅适用于非端到端加密服务，并利用'紧急程序'通过，需要全体议员的绝对多数（361 票）才能否决，尽管有 314 票反对、276 票赞成。
+
+hackernews · rapnie · 7月9日 11:03 · [社区讨论](https://news.ycombinator.com/item?id=48843923)
+
+**背景**: Chat Control 指欧盟扫描私密消息以查找儿童性虐待材料的提案。批评者认为该技术不可靠且侵犯隐私。该法律 3 月两次被否决，但通过理事会支持的程序重新复活。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/">EU Parliament greenlights Chat Control 1.0 – Breyer: "Our children lose out"</a></li>
+<li><a href="https://www.techtimes.com/articles/320010/20260709/eu-parliament-passes-chat-control-default-314-meps-couldnt-block-scanning-law.htm">EU Parliament Passes Chat Control by Default: 314 MEPs Couldn't Block Scanning Law</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chat_Control">Chat Control - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 评论者对程序性操作表示愤慨，称其不民主，是迈向极权主义的一步。有用户指出，投票安排在暑假前夕，许多议员缺席，导致否决失败。
+
+**标签**: `#privacy`, `#surveillance`, `#EU`, `#legislation`, `#digital rights`
+
+---
+
+<a id="item-6"></a>
+## [用 Rust 重写的 PostgreSQL 通过全部回归测试](https://github.com/malisper/pgrust) ⭐️ 8.0/10
+
+一个名为 pgrust 的项目使用大型语言模型（LLM）将 PostgreSQL 用 Rust 重写，目前已通过 100%的 PostgreSQL 回归测试。 这展示了 LLM 在大规模代码翻译方面的潜力，但也引发了关于代码质量、架构变更（如线程模型）以及原始 PostgreSQL 许可证与新 AGPL 许可证兼容性的关键问题。 该项目在不到一个月内生成了超过 7100 次提交，使得通过提交历史进行传统代码审查变得不切实际。许可证从宽松的 PostgreSQL 许可证改为 AGPL，这可能引发与原始代码库的兼容性问题。
+
+hackernews · SweetSoftPillow · 7月9日 06:18 · [社区讨论](https://news.ycombinator.com/item?id=48841676)
+
+**背景**: PostgreSQL 是一款广泛使用的开源关系型数据库，已有 30 年历史。Rust 是一种以内存安全和性能著称的系统编程语言。回归测试是一组确保新变更不会破坏现有功能的测试套件。该项目利用 LLM 自动将 C 代码翻译为 Rust，这是一种新颖但有争议的方法。
+
+**社区讨论**: 作者解释他们正在尝试用 LLM 构建更好的 Postgres。评论者指出，100%的回归测试并未涵盖线程架构变更，因此该成就并不全面。还有人担心，一个月内超过 7100 次提交的 LLM 生成代码难以审查，并且许可证从 PostgreSQL 改为 AGPL，质疑其与原始源代码的兼容性。
+
+**标签**: `#database`, `#rust`, `#postgres`, `#llm`, `#open-source`
+
+---
+
+<a id="item-7"></a>
+## [美国陆军后勤脆弱性分析](https://mwi.westpoint.edu/the-glass-backbone-why-the-armys-logistics-will-break-in-the-next-war/) ⭐️ 8.0/10
+
+现代战争研究所最近的一项分析指出，由于对齿尾比的误解，美国陆军后勤体系极其脆弱，可能会在未来的冲突中崩溃。 这很重要，因为后勤对军事成功至关重要，如果陆军不改革其后勤体系，尽管拥有技术优势，仍可能在未来的战争中失败。 文章指出，齿尾比（作战人员与后勤人员的比例）被误解，导致对后勤投入不足。并警告现代战争的速度和复杂性将压垮当前的后勤支柱。
+
+hackernews · baud147258 · 7月9日 13:24 · [社区讨论](https://news.ycombinator.com/item?id=48845442)
+
+**背景**: 齿尾比是衡量作战部队与支援部队比例的一项军事指标。历史上，后勤在预算优先级中一直被低估。该分析借鉴了历史案例以及乌克兰等当前冲突，指出了系统性风险。
+
+**社区讨论**: 评论普遍赞同该分析，用户引用了历史类比（例如费边对抗汉尼拔的战术），并以乌克兰战争为例证。有评论指出 SpaceX 的 StarFall 等技术可能改变后勤，但其他人仍持怀疑态度。
+
+**标签**: `#logistics`, `#military`, `#systems analysis`, `#strategic studies`, `#resilience`
+
+---
+
+<a id="item-8"></a>
+## [Meta 推出 Muse Spark 1.1 及商业 API](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/) ⭐️ 8.0/10
+
+Meta 发布了其专有 AI 模型的新版本 Muse Spark 1.1，并推出了商业 API，开发者可通过付费订阅进行访问。 此举标志着 Meta 进军商业 AI 模型市场，可能以激进的价格和开放权重策略颠覆 OpenAI 和 Anthropic 等竞争对手，使编码模型商品化。 该模型在 Terminal-Bench-2.1 上进行了评估，但社区成员指出资源限制（6 个 CPU 核心、8GB RAM）被覆盖，质疑结果的可靠性。定价为每百万输入 token 1.25 美元、每百万输出 token 4.5 美元，缓存输入则为 0.15 美元。
+
+hackernews · ot · 7月9日 14:10 · [社区讨论](https://news.ycombinator.com/item?id=48846184)
+
+**背景**: Muse Spark 是 Meta Superintelligence Labs (MSL) 开发的专有大型语言模型，于 2026 年 4 月 8 日首次发布。商业 API 允许开发者付费将模型集成到其应用中。Meta 的开放权重策略公开模型权重，促进社区采用，但可能减少竞争对手的收入。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://grokipedia.com/page/Muse_Spark_AI_model">Muse Spark (AI model)</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 社区反馈不一：一些用户称赞其定价和性能具有竞争力，而另一些则批评评估方法因资源限制被覆盖而存在缺陷。关于 Meta 作为‘搅局者’将 AI 模型商品化，还是与前沿实验室正面竞争的战略角色，存在争论。
+
+**标签**: `#Meta AI`, `#Muse Spark`, `#open-source AI`, `#AI model evaluation`, `#commercial AI`
+
+---
+
+<a id="item-9"></a>
+## [AI 内容充斥社交媒体，尤其是 LinkedIn](https://www.pangram.com/blog/ai-in-your-feed) ⭐️ 8.0/10
+
+Pangram 上的一篇博文指出，AI 生成的内容在社交媒体（尤其是 LinkedIn）上越来越普遍，引发了关于真实性和线上讨论本质的辩论。 这一趋势威胁到专业网络上真正的人际联系和讨论，因为 AI 撰写的帖子可能侵蚀信任并贬低真实声音，影响人们建立人脉和分享知识的方式。 该帖因社区高度参与（162 分、141 条评论）而获得 8.0/10 评分，评论反映了从对 AI 写作的怀疑到对机器人和模仿 AI 语言模式的观察等多样观点。
+
+hackernews · mukmuk · 7月9日 15:50 · [社区讨论](https://news.ycombinator.com/item?id=48847940)
+
+**背景**: 像 GPT-4 这样的 AI 工具可以生成类似人类的文本，从而轻松大规模制作社交媒体帖子。作为专业网络，LinkedIn 依赖真实的个人见解来进行有意义的互动。AI 内容的兴起引发了关于平台价值及其用户声音真实性的问题。
+
+**社区讨论**: 社区评论显示出强烈分歧：一些人认为 AI 写作破坏了个人的声音和真实性，而另一些人则指出 LinkedIn 一直存在套路化内容，AI 只是加速了这一过程。还有用户指出，即使不直接使用 AI，人们也越来越多地模仿 AI 的语言模式。
+
+**标签**: `#AI`, `#social media`, `#content generation`, `#LinkedIn`, `#authenticity`
 
 ---
 
 <a id="item-10"></a>
-## [美团 OWL 模型对话数据疑似泄露于 GitHub](https://github.com/gumusserv/ProducerBenchV2/blob/83cad6007ef3fe8df33386e8f43738fe62337e16/parsed_source_data/data/) ⭐️ 8.0/10
+## [OpenAI 推出 GPT‑Live 语音模式，可委托 GPT‑5.5 处理复杂任务](https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything) ⭐️ 8.0/10
 
-美团免费测试模型 OWL（LongCat）的对话数据疑似在 GitHub 仓库上泄露，该仓库已被下架。泄露由 Discord 机器人令牌扫描器发现，并触发了令牌重置。 此事件凸显了大语言模型部署中反复出现的安全与隐私风险，尤其是当用户对话被记录并暴露时。它强调了企业保护 AI 工作流中敏感数据的迫切需求，以及用户应避免向 AI 模型分享凭证或专有信息。 根据用户截图，该仓库至少在 2026 年 7 月 7 日公开可见。泄露的数据据称包含美团 OWL 模型的对话记录，OWL 是 OpenRouter 上的测试模型，泄露事件被一个 Discord 机器人令牌扫描器发现。
+OpenAI 推出了 GPT‑Live，这是 ChatGPT 升级后的语音模式模型，能够将网页搜索、深度推理等复杂任务委托给 GPT‑5.5，同时保持对话流畅。 此次更新显著提升了 ChatGPT 语音模式的实用性，使其成为更强大的头脑风暴伙伴，既能进行对话又能处理复杂推理任务。 GPT‑Live 取代了之前基于 GPT‑4o 的模型，允许用户进行长达一小时的对话，同时在后台无缝将困难任务委托给 GPT‑5.5。
 
-telegram · zaihuapd · 7月8日 13:35
+rss · Simon Willison · 7月8日 23:20
 
-**背景**: 美团近期开源了 LongCat-2.0，这是一个 1.6 万亿参数的 MoE 模型，每个令牌激活约 480 亿参数，该模型驱动着 OpenRouter 上的 OWL 模型。OpenRouter 是一个统一 API 平台，提供对数百个来自不同提供商的大语言模型的访问。类似的数据泄露此前也曾发生在 Google、DeepSeek 等 AI 提供商身上，其用户对话被用于模型改进。
+**背景**: GPT‑5.5 是 OpenAI 于 2026 年 4 月 23 日发布的大型语言模型，代号 'Spud'。它在 Terminal-Bench 2.0 和 FrontierMath 等基准测试中取得了显著成绩。此前，OpenAI 在语音模式中使用的是 GPT‑4o 时代的模型，知识截止于 2024 年，能力有限。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.geopolitechs.org/p/longcat-20-chinas-most-unexpected">LongCat-2.0: China's Most Unexpected AI Model</a></li>
-<li><a href="https://venturebeat.com/technology/meituan-open-sources-longcat-2-0-the-1-6t-near-frontier-agentic-coding-model-thats-been-leading-openrouter-trained-entirely-on-chinese-chips">Meituan open sources LongCat-2.0, the 1.6T, near-frontier agentic coding model that's been leading OpenRouter — trained entirely on Chinese chips | VentureBeat</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GPT-5.5">GPT-5.5</a></li>
 
 </ul>
 </details>
 
-**标签**: `#data leak`, `#AI security`, `#privacy`, `#large language models`, `#Meituan`
+**标签**: `#OpenAI`, `#GPT-Live`, `#ChatGPT`, `#Voice Mode`, `#AI`
 
 ---
 
 <a id="item-11"></a>
-## [通过泄漏电磁信号识别手机应用，准确率达 99%](https://www.scmp.com/news/china/science/article/3359688/chinese-researchers-find-peephole-any-smartphone-its-leaked-radio-signal) ⭐️ 8.0/10
+## [Meta 超级智能更新：RL 初创公司及算力扩展](https://newsletter.semianalysis.com/p/the-future-of-meta-superintelligence) ⭐️ 8.0/10
 
-中国研究人员开发出一种非接触式技术，通过分析手机泄漏的低频电磁信号来识别正在使用的应用，在 iPhone 15 Pro、小米 15 Pro 和 OPPO Reno 13 上的准确率最高达到 99.07%。 这项技术代表了一种新型侧信道攻击，即使设备处于离线、飞行模式、加密或锁定状态也能工作，给隐私带来重大风险，同时为数字取证提供了无需物理接触的新能力。 该研究测试了抖音（TikTok）、微信视频通话、百度地图、短信、浏览器、相机和云存储等应用。该方法无需访问操作系统或存储数据，仅依赖每个应用独特的电磁信号特征。
+Meta 超级智能计划的进展更新揭示了一个顶级强化学习环境初创公司的出现，以及据称有史以来最激进的算力扩展，跨度超过 2000 公里。 这表明 Meta 在超级智能研发上取得了快速进展，对 AI 行业和竞争格局（尤其是 Google DeepMind）具有重要影响。 更新中提到了一家新的强化学习环境初创公司、前所未有的跨越 2000 多公里的算力扩展，以及对 Google DeepMind 的战略建议，表明重大基础设施发展。
 
-telegram · zaihuapd · 7月8日 16:05
+rss · Semianalysis · 7月9日 19:16
 
-**背景**: 侧信道攻击利用电磁辐射等物理泄漏来推断敏感信息。智能手机在运行时会产生低频电磁信号，不同应用会生成独特模式。这种非接触式数字取证技术可从远处捕获这些信号，从而在不接触设备的情况下识别应用。
+**背景**: 超级智能指的是在几乎所有领域超越人类认知能力的人工智能。Meta 一直在大力投资 AI，特别是强化学习和大规模算力基础设施。该 RL 环境初创公司可能提供用于训练高级 AI 代理的模拟平台。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.ckhq.net/html/6c1af61946e47994a7d682373d5f7757.html">中国科研团队研发非接触式智能手机应用识别技术，准确率达99.07%</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/25590891831">什么是 Side Channel Attack（侧信道攻击）？ - 知乎</a></li>
-
-</ul>
-</details>
-
-**标签**: `#security`, `#privacy`, `#smartphone`, `#electromagnetic signals`, `#side-channel attack`
+**标签**: `#Meta`, `#Superintelligence`, `#Reinforcement Learning`, `#Compute Scaling`, `#AI Progress`
 
 ---
 
 <a id="item-12"></a>
-## [LineageOS 推出浏览器刷机工具](https://www.androidauthority.com/lineageos-summertime-update-2026-3685112/) ⭐️ 8.0/10
+## [IMGNet：用符号模式替代余弦相似度的人脸验证模型](https://www.reddit.com/r/MachineLearning/comments/1urxvxh/i_built_imgnet_a_face_verification_model_that/) ⭐️ 8.0/10
 
-LineageOS 发布了 Lineage Flash Tools，这是一款基于网页的工具，用户无需本地安装 adb 和 fastboot 即可直接在浏览器中刷机。团队还宣布基于 Android 17 的 LineageOS 24 已开始开发。 这降低了安装自定义 ROM 的门槛，使不太懂技术的用户也能轻松上手。即将推出的基于 Android 17 的 LineageOS 24 表明团队持续致力于支持最新 Android 版本。 该工具支持 Fastboot、ADB 以及三星的 Odin 协议，需要使用支持 WebUSB 的浏览器（如 Chrome 或 Edge）。它必须配合设备专属的 Wiki 安装指南使用，并不能完全替代传统刷机流程。
+这项工作挑战了人脸验证中默认使用余弦相似度的做法，表明符号模式一致性可以产生有竞争力的结果，可能为基于嵌入的识别系统的度量设计开辟新方向。 该模型包含一个新颖的 SW Block 层，计算多尺度关系差异，以及一个完全基于符号模式一致性、无幅度依赖的 IMG Sign MSE Loss。当直接应用于 ArcFace 嵌入（无需重新训练）时，IMG Sign Score 在 LFW 上达到 99.58%。
 
-telegram · zaihuapd · 7月9日 01:46
+reddit · r/MachineLearning · /u/img-_- · 7月9日 18:00
 
-**背景**: WebUSB 是一种 JavaScript API，允许网页应用安全地与 USB 设备通信，从而实现基于浏览器的刷机。三星设备通常使用 Odin 协议而非 fastboot 进行固件刷写。A/B OTA 流式安装只下载更新包中需要的部分，以节省空间并加快更新速度。
+**背景**: 人脸验证通常使用神经网络将人脸映射为嵌入向量，然后通过余弦相似度进行比较。余弦相似度衡量向量之间的角度，对全局方向敏感但忽略局部符号模式。IMGNet 则通过滑动窗口检查符号模式，保留关系结构。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/WebUSB">WebUSB - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Odin_(firmware_flashing_software)">Odin (firmware flashing software) - Wikipedia</a></li>
-<li><a href="https://source.android.com/docs/core/ota/ab">A/B (seamless) system updates | Android Open Source Project</a></li>
+**标签**: `#face verification`, `#machine learning`, `#embeddings`, `#novel approach`
 
-</ul>
-</details>
+---
 
-**标签**: `#LineageOS`, `#Android`, `#custom ROM`, `#WebUSB`, `#flashing`
+<a id="item-13"></a>
+## [大疆 EV50 无人机飞越珠峰 8861 米](https://www.163.com/dy/article/L1CUCV940514R9OJ.html) ⭐️ 8.0/10
+
+大疆尚未发布的 EV50 垂直起降运载无人机参与‘巅峰使命’珠峰科考，在北坡飞越 8861 米，创下同类公开测试中的最高飞行升限。 这一成就展示了无人机在高海拔作业和低空物流方面的能力，可能对极端环境下的无人机配送和科研产生重要影响。 EV50 是一款复合翼无人机，可原地垂直起降，起飞后切换固定翼巡航。在为期 12 天的任务中，累计完成 32 架次起降，连续爬升 3730 米，返程时仍剩 30%电量。
+
+telegram · zaihuapd · 7月9日 06:00
+
+**背景**: 垂直起降（VTOL）无人机结合了多旋翼和固定翼飞机的优点，能在狭小空间起降并保持高效长航时飞行。高海拔飞行面临空气稀薄、低温和强风等挑战。大疆是领先的无人机制造商，EV50 设计用于货物运输和低空物流。
+
+**标签**: `#无人机`, `#大疆`, `#珠峰`, `#航空科技`, `#物流`
+
+---
+
+<a id="item-14"></a>
+## [国家超算互联网核心节点在郑州上线](https://36kr.com/newsflashes/3887797387344387) ⭐️ 8.0/10
+
+2026 年 7 月 9 日，国家超算互联网核心节点在郑州正式上线，可提供超过 10 万张国产 AI 算力卡。 这标志着中国国家计算基础设施的重大里程碑，创建了超算互联网平台下最大的国产 AI 算力资源池，将加速全国的 AI 研发。 该节点承担运营管理、资源调度等核心功能，同时整合供需对接、产业孵化等综合服务，旨在构建覆盖全国的计算资源统筹调度体系。
+
+telegram · zaihuapd · 7月9日 07:00
+
+**背景**: 国家超算互联网是一个将全国超算中心和 AI 计算资源连接成统一网络的项目。郑州核心节点是接入该平台的最大单体资源池，提供庞大的国产 AI 算力。
+
+**标签**: `#supercomputing`, `#AI infrastructure`, `#domestic computing`, `#China tech`, `#national project`
+
+---
+
+<a id="item-15"></a>
+## [OpenAI 与美国战争部拟禁 AI 监控公民](https://t.me/zaihuapd/42459) ⭐️ 8.0/10
+
+OpenAI 与美国战争部已达成一致，拟修订双方的 AI 合作协议，明确禁止使用 AI 系统监控美国公民，此举由 OpenAI 首席执行官 Sam Altman 主动提出，以回应伦理担忧。 这为军事合同中的 AI 伦理使用树立了重要先例，可能影响其他科技公司和政府政策，以保护公民自由免受 AI 驱动的监控侵害。 修订后的条款明确禁止有意监控美国公民，并禁止利用商业获取的个人身份信息进行追踪或监测。该协议修正案尚未正式签署。
+
+telegram · zaihuapd · 7月9日 13:22
+
+**背景**: OpenAI 一直在扩大与美国国防机构（包括原国防部、现战争部）的合作，引发了关于 AI 用于战争的伦理担忧。另一家 AI 公司 Anthropic 此前曾因争议中止了与战争部的类似合同。
+
+**标签**: `#AI ethics`, `#OpenAI`, `#military AI`, `#surveillance`, `#AI regulation`
 
 ---

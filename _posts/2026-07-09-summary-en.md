@@ -5,288 +5,289 @@ date: 2026-07-09
 lang: en
 ---
 
-> From 36 items, 12 important content pieces were selected
+> From 40 items, 15 important content pieces were selected
 
 ---
 
-1. [TypeScript 7.0 Rewritten in Go, Up to 12x Faster Builds](#item-1) ⭐️ 9.0/10
-2. [John Deere Must Allow Right to Repair Under FTC Settlement](#item-2) ⭐️ 8.0/10
-3. [OpenAI's Analysis Reveals Noise in Coding Benchmarks](#item-3) ⭐️ 8.0/10
-4. [Bun Rewrites Runtime from Zig to Rust with AI Assistance](#item-4) ⭐️ 8.0/10
-5. [SpaceXAI's Grok 4.5: Faster, Cheaper, Opus-Level AI Model](#item-5) ⭐️ 8.0/10
-6. [Decoding the Obfuscated Bash Script on a Uniqlo T-Shirt](#item-6) ⭐️ 8.0/10
-7. [Cloudflare Meerkat: First Production Asynchronous Consensus](#item-7) ⭐️ 8.0/10
-8. [OpenAI Introduces GPT-Live, Upgrades ChatGPT Voice Mode](#item-8) ⭐️ 8.0/10
-9. [LingBot-Video: Open-Source Sparse-MoE Video Diffusion Transformer](#item-9) ⭐️ 8.0/10
-10. [Meituan OWL Model Conversations Suspected Leak on GitHub](#item-10) ⭐️ 8.0/10
-11. [Smartphone apps identified via leaked radio signals with 99% accuracy](#item-11) ⭐️ 8.0/10
-12. [LineageOS Releases Browser-Based Flashing Tool](#item-12) ⭐️ 8.0/10
+1. [OpenAI Releases GPT-5.6 with Three Tiers, Sol Achieves ARC-AGI-3 SOTA](#item-1) ⭐️ 10.0/10
+2. [Bun Rewritten from Zig to Rust with AI](#item-2) ⭐️ 9.0/10
+3. [TypeScript 7.0 Released with Go Rewrite, Up to 12x Speed](#item-3) ⭐️ 9.0/10
+4. [Ant Group Open-Sources LingBot-Video, First MoE Embodied Video Model](#item-4) ⭐️ 9.0/10
+5. [EU Parliament Passes Chat Control 1.0 via Procedural Trick](#item-5) ⭐️ 8.0/10
+6. [Postgres rewritten in Rust passes all regression tests](#item-6) ⭐️ 8.0/10
+7. [US Army logistics vulnerabilities analyzed](#item-7) ⭐️ 8.0/10
+8. [Meta launches Muse Spark 1.1 with commercial API](#item-8) ⭐️ 8.0/10
+9. [AI content floods social media, especially LinkedIn](#item-9) ⭐️ 8.0/10
+10. [OpenAI Launches GPT-Live Voice Mode with GPT-5.5 Delegation](#item-10) ⭐️ 8.0/10
+11. [Meta's Superintelligence Update Reveals RL Startup and Compute Scaling](#item-11) ⭐️ 8.0/10
+12. [IMGNet: Face Verification via Sign Patterns Replaces Cosine Similarity](#item-12) ⭐️ 8.0/10
+13. [DJI EV50 drone reaches 8861m over Everest](#item-13) ⭐️ 8.0/10
+14. [China's Supercomputing Internet Core Node Launches in Zhengzhou](#item-14) ⭐️ 8.0/10
+15. [OpenAI and US War Dept to Ban AI for Citizen Surveillance](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [TypeScript 7.0 Rewritten in Go, Up to 12x Faster Builds](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/) ⭐️ 9.0/10
+## [OpenAI Releases GPT-5.6 with Three Tiers, Sol Achieves ARC-AGI-3 SOTA](https://openai.com/index/gpt-5-6/) ⭐️ 10.0/10
 
-Microsoft has officially released TypeScript 7.0, a major version rewritten in Go, achieving up to 12x faster builds compared to TypeScript 6, with specific benchmarks showing a 125.7s build for vscode reduced to 10.6s. This performance improvement significantly reduces developer wait times for large codebases, making TypeScript more viable for massive projects and potentially accelerating CI/CD pipelines, while demonstrating the benefits of rewriting performance-critical compilers in lower-level languages. The new version introduces --checkers and --builders flags to customize parallelism, and provides a compatibility package for coexistence with TypeScript 6; however, toolchains for embedded languages like Vue and Svelte are not yet ready and still require the old version.
+OpenAI announced the general availability of GPT-5.6, a family of three models: Luna, Terra, and Sol. The largest tier, Sol, sets a new state-of-the-art on the ARC-AGI-3 benchmark with a 7.8% score, becoming the first verified frontier model to solve an ARC-AGI-3 game. This release marks a significant leap in AI reasoning capabilities, especially with Sol's breakthrough on ARC-AGI-3, a benchmark designed to measure human-like interactive intelligence. The tiered pricing model (Luna, Terra, Sol) makes advanced AI more accessible while offering a premium option for demanding tasks, and the strong performance is likely to raise the bar for competitors. The three tiers are priced per 1M input/output tokens: Luna $1/$6, Terra $2.50/$15, Sol $5/$30. Sol consumes significant compute resources — a single complex query can use up to 95% of a 5-hour quota on the Plus plan. The model family also includes improved intent understanding and preserves original image dimensions.
 
-hackernews · DanRosenwasser · Jul 8, 16:06 · [Discussion](https://news.ycombinator.com/item?id=48833715)
+hackernews · logickkk1 · Jul 9, 17:04 · [Discussion](https://news.ycombinator.com/item?id=48849066)
 
-**Background**: TypeScript is a superset of JavaScript that adds static typing, helping developers catch errors early. Previously, the TypeScript compiler was written in TypeScript itself, which limited its performance for large codebases. Rewriting it in Go allows it to leverage native compilation and multi-threading, enabling the dramatic speed improvements seen in this release.
+**Background**: GPT-5.6 is OpenAI's latest flagship model family, succeeding GPT-5. It comes in three sizes: Luna (fastest/cheapest), Terra (mid-range), and Sol (most capable). ARC-AGI-3 is an interactive reasoning benchmark that challenges AI agents to explore novel environments, infer goals, and plan effectively. The tiered pricing model follows a pattern also used by Anthropic and Google for their models.
 
-**Discussion**: Comments celebrate the team's achievement, with users sharing benchmark data and expressing excitement about the speed improvement. Some note their continued appreciation for JSDoc type syntax, while others joke about waiting for a Rust rewrite.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://openai.com/index/previewing-gpt-5-6-sol/">Previewing GPT‑5.6 Sol: a next-generation model - OpenAI</a></li>
+<li><a href="https://andrew.ooo/answers/gpt-5-6-sol-vs-terra-vs-luna-tiered-model-explained-july-2026/">GPT-5.6 Sol vs Terra vs Luna: OpenAI's New Tier Explained</a></li>
+<li><a href="https://arcprize.org/arc-agi/3">ARC-AGI-3</a></li>
 
-**Tags**: `#TypeScript`, `#performance`, `#Go`, `#compiler`, `#programming languages`
+</ul>
+</details>
+
+**Discussion**: Community reactions are mixed but generally positive. Users noted the high quota consumption by Sol (ekzy reported 95% usage for one query) and shared practical tips from the developer guide. Some discussed comparisons with other models like Claude Code, and one commenter pointed out that OpenAI omitted comparisons with Fable 5 in certain benchmarks because it refused to answer questions. Overall, the release generated substantial engagement (939 points, 703 comments) confirming its importance.
+
+**Tags**: `#GPT-5.6`, `#OpenAI`, `#AI`, `#large language models`, `#ARC-AGI`
 
 ---
 
 <a id="item-2"></a>
-## [John Deere Must Allow Right to Repair Under FTC Settlement](https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02) ⭐️ 8.0/10
+## [Bun Rewritten from Zig to Rust with AI](https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything) ⭐️ 9.0/10
 
-The Federal Trade Commission (FTC) has reached a settlement with John Deere requiring the company to allow farmers and independent repair shops to repair Deere equipment. The settlement ends years of practice where Deere restricted access to diagnostic software and repair tools. This settlement marks a major victory for the right-to-repair movement, empowering farmers to fix their own tractors and reducing their reliance on expensive dealer repairs. It could set a precedent for other industries, such as electronics and automotive, where similar restrictions exist. Deere must pay $1 million collectively to five states for antitrust enforcement costs and will be under compliance oversight for 10 years. The settlement specifically addresses software locks that prevented owners from diagnosing and fixing issues without dealer authorization.
+Jarred Sumner announced that Bun, the JavaScript runtime, has been rewritten from Zig to Rust using AI coding agents. The new Rust-based version is now live in Claude Code v2.1.181 since June 17, 2026, improving startup speed by 10% on Linux. This rewrite challenges the long-held belief that large-scale software rewrites are unwise, demonstrating that AI agents can make such projects feasible and cost-effective. It also improves Bun's reliability, addressing a large number of memory-related bugs, which benefits its extensive user base. The rewrite took 11 days, cost approximately $165,000 in AI API tokens, and used 5.9 billion uncached input tokens and 690 million output tokens. The Bun TypeScript test suite served as a conformance suite to validate the port, which involved over 1 million lines of code added.
 
-hackernews · djoldman · Jul 8, 23:37 · [Discussion](https://news.ycombinator.com/item?id=48838876)
+rss · Simon Willison · Jul 8, 23:57
 
-**Background**: Modern tractors contain sophisticated computer systems that control everything from engine timing to GPS navigation. Manufacturers like John Deere used digital rights management (DRM) to lock these systems, forcing farmers to use authorized dealers for repairs. This practice has led to farmers hacking their own equipment or buying illicit diagnostic tools from overseas.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://pirg.org/resources/john-deere-and-right-to-repair-over-the-years/">John Deere and Right to Repair over the years - pirg.org</a></li>
-<li><a href="https://copperhilltech.com/blog/farmers-are-hacking-their-tractors-because-of-a-right-to-repair-ban/">Farmers Are Hacking Their Tractors Because of a Right to Repair Ban</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Comments praised activists like Louis Rossmann for their role in the right-to-repair movement. Some criticized the $1 million fine as trivial compared to Deere's profits, while others debated the broader implications for tech companies and consumer rights.
-
-**Tags**: `#right-to-repair`, `#consumer rights`, `#agriculture technology`, `#FTC`, `#regulatory policy`
-
----
-
-<a id="item-3"></a>
-## [OpenAI's Analysis Reveals Noise in Coding Benchmarks](https://openai.com/index/separating-signal-from-noise-coding-evaluations/) ⭐️ 8.0/10
-
-OpenAI published an analysis showing that the popular coding benchmark SWE-Bench Pro contains significant noise, with many tasks having incomplete or contradictory specifications, and they propose methods to improve evaluation reliability. Accurate coding evaluation is crucial for safely deploying AI models, and flawed benchmarks can mislead about model capabilities, potentially impacting development and safety decisions across the AI industry. OpenAI's team manually reviewed all 798 tasks in SWE-Bench Pro and found that 48% had issues, including missing tests, ambiguous requirements, or bugs in the ground-truth solutions, leading to inflated model performance.
-
-hackernews · sk4rekr0w · Jul 8, 21:03 · [Discussion](https://news.ycombinator.com/item?id=48837396)
-
-**Background**: SWE-Bench Pro is a benchmark designed to evaluate AI models on real-world software engineering tasks, such as fixing bugs or implementing features. The signal-to-noise ratio concept, borrowed from engineering, describes the proportion of meaningful data (signal) versus irrelevant or misleading data (noise) in evaluation results.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://openai.com/index/separating-signal-from-noise-coding-evaluations/">Separating signal from noise in coding evaluations - OpenAI</a></li>
-<li><a href="https://judyailab.com/en/posts/ai-news-20260709-separating-signal-from-noise-in-coding-evaluations/">How to Distinguish Real Capability from Noise in Code Evaluations</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Signal-to-noise_ratio">Signal-to-noise ratio - Wikipedia</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters expressed skepticism, noting that benchmark flaws were known but undervalued, and called for new metrics that combine efficiency with intelligence, such as measuring accomplishments per API spend. Others highlighted issues like cheating and hardware configuration manipulation.
-
-**Tags**: `#AI evaluation`, `#coding benchmarks`, `#OpenAI`, `#machine learning`, `#benchmark reliability`
-
----
-
-<a id="item-4"></a>
-## [Bun Rewrites Runtime from Zig to Rust with AI Assistance](https://bun.com/blog/bun-in-rust) ⭐️ 8.0/10
-
-Bun, a popular JavaScript runtime, has rewritten its core runtime from Zig to Rust using AI-powered tools Fable and Claude Code, resulting in a 20% smaller binary, improved stability, and 5% better performance. This rewrite demonstrates the potential of AI-assisted code translation to reduce engineering costs and timeline significantly, while also sparking debate about language choice and the future of systems programming for high-performance runtimes. The project was executed by a single engineer using Fable (an automated translation pipeline) and Claude Code for code review and fixes, completing what would have taken a team of engineers a year in a much shorter time frame.
-
-hackernews · afturner · Jul 8, 21:49 · [Discussion](https://news.ycombinator.com/item?id=48837877)
-
-**Background**: Bun is a fast all-in-one JavaScript runtime that bundles, installs, and runs JavaScript and TypeScript. It was originally written in Zig, a systems programming language designed as an improvement to C. Rust is another systems language focused on memory safety and concurrency without garbage collection.
+**Background**: Bun is an all-in-one JavaScript runtime and toolkit designed as a fast alternative to Node.js. It was originally written in Zig, a low-level systems programming language focused on robustness and performance. Rust, another systems language, provides memory safety guarantees through its ownership model, which helps prevent use-after-free and double-free bugs that plagued the Zig version.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Bun_(software)">Bun (software) - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Zig_(programming_language)">Zig (programming language)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Zig_(programming_language)">Zig (programming language) - Wikipedia</a></li>
 <li><a href="https://github.com/oven-sh/bun">GitHub - oven-sh/bun: Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters debated the implications for Zig, with some noting that a naive rewrite away from Zig fixed memory leaks and improved stability, which is concerning for Zig's reputation. Others highlighted the cost-effectiveness of using AI instead of hiring engineers, while some criticized the handling of the transition, such as abandoning fixes for the Zig version.
-
-**Tags**: `#Rust`, `#Zig`, `#AI-assisted development`, `#JavaScript runtime`, `#software engineering`
+**Tags**: `#Bun`, `#Rust`, `#Zig`, `#JavaScript runtime`, `#programming languages`
 
 ---
 
-<a id="item-5"></a>
-## [SpaceXAI's Grok 4.5: Faster, Cheaper, Opus-Level AI Model](https://x.ai/news/grok-4-5) ⭐️ 8.0/10
+<a id="item-3"></a>
+## [TypeScript 7.0 Released with Go Rewrite, Up to 12x Speed](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/) ⭐️ 9.0/10
 
-SpaceXAI released Grok 4.5, a new AI model that delivers 4x better reasoning efficiency than Opus while costing only $2 per million input tokens and $6 per million output tokens. Grok 4.5's superior token efficiency and lower pricing could disrupt the AI market, but ethical concerns about xAI's trustworthiness may hinder its adoption in sensitive business applications. Grok 4.5 is an 'Opus-class model' that is faster and more token-efficient than competitors; it was trained on trillions of tokens of Cursor data capturing real-world developer interactions.
+Microsoft has officially released TypeScript 7.0, which replaces the original JavaScript-based compiler with a complete rewrite in Go, enabling true multi-threaded compilation and delivering 8 to 12 times faster build speeds. Developers can now install it via npm, and mainstream editors support the new language server through LSP. This performance breakthrough drastically reduces compilation times for large TypeScript codebases, improving developer productivity and CI/CD pipeline efficiency. It also sets a precedent for rewriting core developer tools in lower-level languages for better performance. The new version introduces --checkers and --builders flags to customize parallelism, and provides a compatibility package to coexist with TypeScript 6. However, embedded language toolchains like Vue and Svelte are not yet supported due to unfinished APIs, so older versions are still needed for those ecosystems.
 
-hackernews · BoumTAC · Jul 8, 18:00 · [Discussion](https://news.ycombinator.com/item?id=48835111)
+telegram · zaihuapd · Jul 9, 04:01
 
-**Background**: Grok 4.5 is the latest model from xAI, founded by Elon Musk in 2023 and later acquired by SpaceX to become SpaceXAI. The model leverages data from Cursor, an AI coding startup acquired by SpaceXAI, to enhance coding and agentic tasks. Token efficiency refers to the model's ability to generate more useful output per token, reducing overall costs for users.
+**Background**: TypeScript is a superset of JavaScript that adds static typing, and its compiler has historically been written in JavaScript itself. Rewriting the compiler in Go allows it to leverage native multi-threading and better memory management, resulting in dramatic speed improvements. The Language Server Protocol (LSP) standardizes communication between editors and language servers, enabling consistent support across all major IDEs.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://x.ai/news/grok-4-5">Introducing Grok 4.5 | SpaceXAI</a></li>
-<li><a href="https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/">SpaceXAI releases Grok 4.5, which Elon describes as an 'Opus-class model' | TechCrunch</a></li>
-<li><a href="https://www.axios.com/2026/07/08/spacexai-grok-new-model">Scoop: SpaceXAI launches new model, Grok 4.5</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Language_Server_Protocol">Language Server Protocol - Wikipedia</a></li>
+<li><a href="https://visualstudiomagazine.com/articles/2026/06/22/typescript-7-0-rc-moves-microsofts-go-rewrite-into-the-mainline-compiler.aspx">TypeScript 7.0 RC Moves Microsoft's Go Rewrite Into the Mainline Compiler -- Visual Studio Magazine</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community reactions are mixed: some praise Grok 4.5's speed and cost-effectiveness, while others express distrust due to xAI's political alignment and ethical issues, such as insufficient moderation of CSAM content. Technical users compare it favorably against GPT and Opus on benchmarks.
-
-**Tags**: `#AI`, `#LLM`, `#Grok`, `#xAI`, `#machine learning`
+**Tags**: `#TypeScript`, `#compiler`, `#performance`, `#Microsoft`, `#Go`
 
 ---
 
-<a id="item-6"></a>
-## [Decoding the Obfuscated Bash Script on a Uniqlo T-Shirt](https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores/) ⭐️ 8.0/10
+<a id="item-4"></a>
+## [Ant Group Open-Sources LingBot-Video, First MoE Embodied Video Model](https://www.qbitai.com/2026/07/446458.html) ⭐️ 9.0/10
 
-Tristan Sherliker's blog post decodes the obfuscated bash script printed on a Uniqlo t-shirt, revealing it to be a self-evaluating script that prints a mathematical formula when executed. This example showcases creative bash obfuscation, sparking community discussion about code aesthetics, typography, and the intersection of programming with fashion. The script uses self-evaluating techniques common in bash obfuscation, and the shirt's typography uses Roboto Mono font with optical kerning, making OCR difficult.
+Ant Group's LingBot has open-sourced LingBot-Video, the world's first embodied video foundation model based on Mixture-of-Experts (MoE) architecture, with 30 billion total parameters and only 3 billion activated during inference. This is a significant milestone for embodied AI and robotics, as it provides an open-source model that can generate task-oriented videos for robot manipulation, accelerating research in simulation, world models, and policy learning. LingBot-Video uses a DiT+MoE architecture, a data engine with 70,000 hours of embodied data, and a multi-dimensional reinforcement learning reward system focusing on physical plausibility and task completion.
 
-hackernews · speerer · Jul 8, 08:46 · [Discussion](https://news.ycombinator.com/item?id=48829312)
+telegram · zaihuapd · Jul 9, 04:30
 
-**Background**: Bash obfuscation involves making shell scripts intentionally hard to read, often by encoding, compressing, or using variable substitution. Self-evaluating scripts execute code that is constructed at runtime. The Uniqlo t-shirt, designed in collaboration with Akamai, features the script as a fashion statement.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://vuink.com/post/gevf-d-dfureyvxre-d-darg/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores">Obfuscated, self-evaluating bash script by CDN Akamai being ...</a></li>
-<li><a href="https://github.com/Bashfuscator/Bashfuscator">GitHub - Bashfuscator/Bashfuscator: A fully configurable and ...</a></li>
-<li><a href="https://www.baeldung.com/linux/bash-obfuscate-script">How to Obfuscate a Bash Script to Make It Unreadable - Baeldung</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters praised the cleverness of the design. Some noted the font is Roboto Mono but the kerning is optical, breaking monospace consistency. Others linked to similar works like Martin Kleppe's Quine Clock. There was also discussion about the difficulty of OCR and curiosity whether an LLM wrote the original script.
-
-**Tags**: `#obfuscation`, `#bash`, `#hackernews`, `#t-shirt`, `#Uniqlo`
-
----
-
-<a id="item-7"></a>
-## [Cloudflare Meerkat: First Production Asynchronous Consensus](https://blog.cloudflare.com/meerkat-introduction/) ⭐️ 8.0/10
-
-Cloudflare Research launched Meerkat, a globally distributed consensus service based on the QuePaxa algorithm, which is the first production implementation of an asynchronous leaderless consensus protocol. The service aims to provide strong consistency and fault tolerance for key-value stores and other applications. This marks a significant milestone as asynchronous consensus, which does not rely on timeouts and can tolerate extreme network delays, moves from research to real-world deployment. It could improve reliability for globally distributed systems that struggle with leader-based protocols like Raft under adverse network conditions. Meerkat uses QuePaxa, which employs hedging—sending redundant proposals to multiple proposers—to achieve liveness without timeouts, enabling progress even during network partitions or delays. However, it requires global consensus for every read operation, which may increase read latency compared to systems that optimize for local reads.
-
-hackernews · bobnamob · Jul 8, 13:18 · [Discussion](https://news.ycombinator.com/item?id=48831565)
-
-**Background**: Most consensus algorithms in production, like Paxos and Raft, are partially synchronous: they rely on timeouts to detect failures and assume network delays are bounded. Asynchronous consensus algorithms like QuePaxa avoid timeouts entirely, making them robust to unbounded delays but historically too inefficient for practical use. QuePaxa, published at SOSP 2023, introduced techniques like adaptive hedging to achieve competitive performance in normal cases while maintaining resilience in worst-case scenarios.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://blog.cloudflare.com/meerkat-introduction/">Introducing Meerkat: an experiment in global consensus</a></li>
-<li><a href="https://bford.info/pub/os/quepaxa/quepaxa.pdf">QuePaxa: Escaping the Tyranny of Timeouts in Consensus QuePaxa: Escaping the Tyranny of Timeouts in Consensus GitHub - dedis/quepaxa: This is the code repository for ... QuePaxa: Escaping the Tyranny of Timeouts in Consensus Post by @cloudflare.social — Bluesky Artifact Review Summary: QuePaxa: Escaping the tyranny of ...</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters noted that comparing Meerkat (leaderless) to Raft (leader-based) is confusing, and highlighted the novelty of QuePaxa being asynchronous. Some questioned the trade-off of consensus on every read, while others appreciated the value for messy networks where leader-based protocols suffer.
-
-**Tags**: `#distributed systems`, `#consensus algorithms`, `#Cloudflare`, `#QuePaxa`, `#asynchronous consensus`
-
----
-
-<a id="item-8"></a>
-## [OpenAI Introduces GPT-Live, Upgrades ChatGPT Voice Mode](https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything) ⭐️ 8.0/10
-
-OpenAI has announced GPT-Live, a new model powering ChatGPT's voice mode that can delegate complex tasks to GPT-5.5 in the background while maintaining conversation flow. This upgrade significantly improves the usefulness of ChatGPT's voice mode, enabling real-time, natural conversations that can handle web search, reasoning, and other complex work without interruption. GPT-Live is currently available in the iPhone app and uses GPT-5.5 as its frontier model, with plans to continuously update as new models are released. A bug causing inappropriate laughter was reported and reportedly fixed.
-
-rss · Simon Willison · Jul 8, 23:20
-
-**Background**: ChatGPT's previous voice mode was based on an older GPT-4o era model with a knowledge cut-off in 2024, limiting its usefulness. GPT-Live represents a new generation of voice models designed for more natural human-AI interaction, capable of multitasking by offloading complex queries to a more powerful model like GPT-5.5.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://openai.com/index/introducing-gpt-live/">Introducing GPT-Live | OpenAI</a></li>
-<li><a href="https://en.wikipedia.org/wiki/GPT-5.5">GPT-5.5</a></li>
-<li><a href="https://openai.com/index/introducing-gpt-5-5/">Introducing GPT‑5.5 - OpenAI</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#OpenAI`, `#GPT-Live`, `#ChatGPT`, `#voice mode`, `#AI update`
-
----
-
-<a id="item-9"></a>
-## [LingBot-Video: Open-Source Sparse-MoE Video Diffusion Transformer](https://www.reddit.com/r/MachineLearning/comments/1ur0bxq/lingbotvideo_sparsemoe_video_diffusion/) ⭐️ 8.0/10
-
-LingBot-Video is a 13B-parameter (1.4B active) sparse mixture-of-experts video diffusion transformer, post-trained with reinforcement learning using a VLM-graded physical plausibility reward. It is released as open source with weights, code, and a Diffusers/SGLang stack, and includes an action-to-video mode for robot rollout prediction. This model represents a significant step in open-source video generation for robotics, combining sparse MoE efficiency with RL-based physical plausibility rewards. However, it raises critical questions about whether VLM-graded rewards can reliably judge physics, and whether video generation alone qualifies as a true world model for robot policy evaluation. LingBot-Video uses a single-stream diffusion transformer with DeepSeek-V3-style sparse MoE (128 experts, top-8 routing). It is post-trained with six rewards including a physical-plausibility reward graded by a VLM from sampled frames, and they add real-video negatives to mitigate reward hacking.
-
-reddit · r/MachineLearning · /u/Savings-Display5123 · Jul 8, 17:58
-
-**Background**: Mixture of Experts (MoE) is a technique where a model uses multiple specialized sub-networks (experts) and a routing mechanism to activate only a subset per input, enabling larger total capacity with lower computational cost. Sparse MoE, as in DeepSeek-V3, activates only a fraction of experts per token. Action-conditioned world models predict future video frames given robot actions, serving as planners or evaluators in robotics. LingBot-Video is positioned as such a model, but only video generation results are shown, no closed-loop robot evaluations.
+**Background**: Mixture-of-Experts (MoE) is a neural network design that activates only a subset of parameters per input, enabling large models with efficient inference. Diffusion Transformer (DiT) adapts the Transformer architecture for diffusion-based generative models. Embodied AI aims to create models that understand and interact with the physical world, often for robotics applications.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Mixture_of_experts">Mixture of experts - Wikipedia</a></li>
 <li><a href="https://huggingface.co/blog/moe">Mixture of Experts Explained</a></li>
-<li><a href="https://arxiv.org/abs/2606.04463">OSCAR: Omni-Embodiment Action-Conditioned World Model for ...</a></li>
+<li><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Peebles_Scalable_Diffusion_Models_with_Transformers_ICCV_2023_paper.pdf">Scalable Diffusion Models with Transformers William Peebles* UC Berkeley</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit post author invites critique, specifically questioning whether a VLM can be a defensible judge of physics or if it leads to reward hacking, and where the line is between a video generator and a world model without closed-loop robot numbers. The author expresses genuine desire for community input on these issues.
+**Tags**: `#AI`, `#Embodied AI`, `#MoE`, `#Video Generation`, `#Open Source`
 
-**Tags**: `#video diffusion`, `#sparse MoE`, `#reinforcement learning`, `#world model`, `#open source`
+---
+
+<a id="item-5"></a>
+## [EU Parliament Passes Chat Control 1.0 via Procedural Trick](https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/) ⭐️ 8.0/10
+
+The European Parliament allowed Chat Control 1.0 to pass without an affirmative majority, enabling mass scanning of private messages on services like Gmail and Snapchat until 2028. This sets a dangerous precedent for EU digital rights, as legislation can be forced through procedural maneuvers, undermining democratic checks. It also threatens user privacy across major platforms. The law applies only to non-end-to-end encrypted services and was passed using an 'urgency procedure' requiring an absolute majority of all MEPs (361) to reject, despite 314 voting against and 276 in favor.
+
+hackernews · rapnie · Jul 9, 11:03 · [Discussion](https://news.ycombinator.com/item?id=48843923)
+
+**Background**: Chat Control refers to EU proposals to scan private messages for child sexual abuse material (CSAM). Critics argue the technology is unreliable and violates privacy. The law was rejected twice in March but revived via a Council-backed procedure.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/">EU Parliament greenlights Chat Control 1.0 – Breyer: "Our children lose out"</a></li>
+<li><a href="https://www.techtimes.com/articles/320010/20260709/eu-parliament-passes-chat-control-default-314-meps-couldnt-block-scanning-law.htm">EU Parliament Passes Chat Control by Default: 314 MEPs Couldn't Block Scanning Law</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chat_Control">Chat Control - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters express outrage over the procedural trick, calling it undemocratic and a step toward totalitarianism. One user notes that the vote was held before summer break when many MEPs were absent, allowing rejection to fail.
+
+**Tags**: `#privacy`, `#surveillance`, `#EU`, `#legislation`, `#digital rights`
+
+---
+
+<a id="item-6"></a>
+## [Postgres rewritten in Rust passes all regression tests](https://github.com/malisper/pgrust) ⭐️ 8.0/10
+
+A project called pgrust uses large language models (LLMs) to rewrite PostgreSQL in Rust, and now passes 100% of the PostgreSQL regression tests. This demonstrates the potential of LLMs for large-scale code translation, but raises critical questions about code quality, architectural changes (e.g., threading), and license compatibility between the original PostgreSQL license and the new AGPL license. The project generated over 7100 commits in less than a month, making traditional code review via commit history impractical. The license was changed from the permissive PostgreSQL license to AGPL, which may raise compatibility issues with the original codebase.
+
+hackernews · SweetSoftPillow · Jul 9, 06:18 · [Discussion](https://news.ycombinator.com/item?id=48841676)
+
+**Background**: PostgreSQL is a widely used open-source relational database with a 30-year history. Rust is a systems programming language known for memory safety and performance. Regression tests are a suite of tests that ensure new changes don't break existing functionality. This project uses LLMs to automatically translate C code to Rust, which is a novel but controversial approach.
+
+**Discussion**: The author explained they are experimenting with LLMs to build a better Postgres. Commenters noted that the 100% regression tests do not cover the threaded architecture change, making the achievement less comprehensive. Others raised concerns about the difficulty of reviewing LLM-generated code with over 7100 commits in a month, and the license change from PostgreSQL to AGPL, questioning its compatibility with the original source.
+
+**Tags**: `#database`, `#rust`, `#postgres`, `#llm`, `#open-source`
+
+---
+
+<a id="item-7"></a>
+## [US Army logistics vulnerabilities analyzed](https://mwi.westpoint.edu/the-glass-backbone-why-the-armys-logistics-will-break-in-the-next-war/) ⭐️ 8.0/10
+
+A recent analysis from the Modern War Institute argues that the US Army's logistics are dangerously brittle due to misconceptions about the tooth-to-tail ratio, and will likely fail in future conflicts. This matters because logistics is critical to military success, and if the Army does not reform its logistics system, it risks losing future wars despite technological advantages. The article contends that the tooth-to-tail ratio—the proportion of combat troops to support personnel—is misunderstood, leading to underinvestment in logistics. It warns that modern warfare's speed and complexity will overwhelm the current logistics backbone.
+
+hackernews · baud147258 · Jul 9, 13:24 · [Discussion](https://news.ycombinator.com/item?id=48845442)
+
+**Background**: The tooth-to-tail ratio is a military metric comparing combat forces to support units. Historically, logistics has been undervalued in budget priorities. The analysis draws on historical examples and current conflicts like Ukraine to highlight systemic risks.
+
+**Discussion**: Comments show strong agreement with the analysis, with users drawing historical parallels (e.g., Fabian strategy against Hannibal) and noting the ongoing Ukraine war as evidence. One comment suggests technologies like SpaceX's StarFall could transform logistics, but others remain skeptical.
+
+**Tags**: `#logistics`, `#military`, `#systems analysis`, `#strategic studies`, `#resilience`
+
+---
+
+<a id="item-8"></a>
+## [Meta launches Muse Spark 1.1 with commercial API](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/) ⭐️ 8.0/10
+
+Meta has released Muse Spark 1.1, a new version of their proprietary AI model, and introduced a commercial API for developers to access it via a paid subscription. This move signals Meta's entry into the commercial AI model market, potentially disrupting competitors like OpenAI and Anthropic with aggressive pricing and an open-weight strategy that could commoditize coding models. The model was evaluated on Terminal-Bench-2.1, but community members noted that resource caps (6 CPU cores, 8GB RAM) were overridden, questioning the validity of the results. Pricing is set at $1.25 per million input tokens and $4.5 per million output tokens, with cached input at $0.15.
+
+hackernews · ot · Jul 9, 14:10 · [Discussion](https://news.ycombinator.com/item?id=48846184)
+
+**Background**: Muse Spark is a proprietary large language model developed by Meta Superintelligence Labs (MSL), first released on April 8, 2026. The commercial API allows developers to integrate the model into their applications for a fee. Meta's open-weight strategy releases model weights publicly, fostering community adoption but potentially reducing competitors' revenue.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://grokipedia.com/page/Muse_Spark_AI_model">Muse Spark (AI model)</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Community feedback was mixed: some users praised the competitive pricing and performance, while others criticized the evaluation methodology as flawed due to resource limit overrides. There was debate over Meta's strategic role as a 'spoiler' commoditizing AI models versus competing head-to-head with frontier labs.
+
+**Tags**: `#Meta AI`, `#Muse Spark`, `#open-source AI`, `#AI model evaluation`, `#commercial AI`
+
+---
+
+<a id="item-9"></a>
+## [AI content floods social media, especially LinkedIn](https://www.pangram.com/blog/ai-in-your-feed) ⭐️ 8.0/10
+
+A blog post on Pangram highlights the increasing prevalence of AI-generated content on social media, particularly LinkedIn, sparking debates about authenticity and the nature of online discourse. This trend threatens genuine human connection and discourse on professional networks, as AI-written posts may erode trust and devalue authentic voices, affecting how people network and share knowledge. The post scores 8.0/10 due to high community engagement, with 162 points and 141 comments reflecting diverse viewpoints, from skepticism about AI writing to observations of bots and mimicry of AI speech patterns.
+
+hackernews · mukmuk · Jul 9, 15:50 · [Discussion](https://news.ycombinator.com/item?id=48847940)
+
+**Background**: AI tools like GPT-4 can generate human-like text, making it easy to produce social media posts at scale. LinkedIn, a professional network, relies on authentic personal insights for meaningful interaction. The rise of AI content raises questions about the platform's value and the authenticity of its users' voices.
+
+**Discussion**: Community comments show strong disagreement: some argue AI writing destroys personal voice and authenticity, while others note that LinkedIn has always had scripted content, and AI just accelerates it. A user also points out that people are increasingly mimicking AI speech patterns, even if not directly using AI.
+
+**Tags**: `#AI`, `#social media`, `#content generation`, `#LinkedIn`, `#authenticity`
 
 ---
 
 <a id="item-10"></a>
-## [Meituan OWL Model Conversations Suspected Leak on GitHub](https://github.com/gumusserv/ProducerBenchV2/blob/83cad6007ef3fe8df33386e8f43738fe62337e16/parsed_source_data/data/) ⭐️ 8.0/10
+## [OpenAI Launches GPT-Live Voice Mode with GPT-5.5 Delegation](https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything) ⭐️ 8.0/10
 
-A suspected data leak of conversations from Meituan's free test OWL (LongCat) model was discovered on a GitHub repository, which has since been taken down. The leak was spotted by a Discord bot token scanner, prompting token resets. This incident highlights recurring security and privacy risks in deploying large language models, especially when user conversations are logged and exposed. It underscores the critical need for enterprises to protect sensitive data in AI workflows and for users to avoid sharing credentials or proprietary information with AI models. The repository was publicly accessible at least as of July 7, 2026, according to user screenshots. The leaked data reportedly included conversations from Meituan's OWL model, which is a test model on OpenRouter, and a Discord bot token scanner flagged the exposure.
+OpenAI introduced GPT-Live, an upgraded voice mode model for ChatGPT that can delegate complex tasks like web search and reasoning to GPT-5.5 while maintaining conversation flow. This update significantly improves the usefulness of ChatGPT voice mode, transforming it into a more capable brainstorming partner that can handle both conversational and complex reasoning tasks. GPT-Live replaces the previous GPT-4o era model and allows users to have long conversations—a full hour was tested—while it seamlessly delegates harder tasks to GPT-5.5 in the background.
 
-telegram · zaihuapd · Jul 8, 13:35
+rss · Simon Willison · Jul 8, 23:20
 
-**Background**: Meituan recently open-sourced LongCat-2.0, a 1.6 trillion-parameter MoE model with 48 billion active parameters per token, which powers the OWL model on OpenRouter. OpenRouter is a unified API platform providing access to hundreds of large language models from different providers. Similar data leaks have occurred with other AI providers like Google and DeepSeek, where user conversations are used for model improvement.
+**Background**: GPT-5.5 is a large language model released by OpenAI on April 23, 2026, known by codename 'Spud'. It achieved notable benchmark scores on Terminal-Bench 2.0 and FrontierMath. OpenAI had previously used a GPT-4o era model for voice mode, which had a knowledge cut-off in 2024 and limited capabilities.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.geopolitechs.org/p/longcat-20-chinas-most-unexpected">LongCat-2.0: China's Most Unexpected AI Model</a></li>
-<li><a href="https://venturebeat.com/technology/meituan-open-sources-longcat-2-0-the-1-6t-near-frontier-agentic-coding-model-thats-been-leading-openrouter-trained-entirely-on-chinese-chips">Meituan open sources LongCat-2.0, the 1.6T, near-frontier agentic coding model that's been leading OpenRouter — trained entirely on Chinese chips | VentureBeat</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GPT-5.5">GPT-5.5</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#data leak`, `#AI security`, `#privacy`, `#large language models`, `#Meituan`
+**Tags**: `#OpenAI`, `#GPT-Live`, `#ChatGPT`, `#Voice Mode`, `#AI`
 
 ---
 
 <a id="item-11"></a>
-## [Smartphone apps identified via leaked radio signals with 99% accuracy](https://www.scmp.com/news/china/science/article/3359688/chinese-researchers-find-peephole-any-smartphone-its-leaked-radio-signal) ⭐️ 8.0/10
+## [Meta's Superintelligence Update Reveals RL Startup and Compute Scaling](https://newsletter.semianalysis.com/p/the-future-of-meta-superintelligence) ⭐️ 8.0/10
 
-Chinese researchers developed a non-contact technique that identifies smartphone apps by analyzing leaked low-frequency electromagnetic signals, achieving up to 99.07% accuracy on iPhone 15 Pro, Xiaomi 15 Pro, and OPPO Reno 13. This technique represents a novel side-channel attack that works even when the device is offline, in airplane mode, encrypted, or locked, posing significant privacy risks and offering new capabilities for digital forensics without physical access. The research tested apps including Douyin (TikTok), WeChat video calls, Baidu Maps, SMS, browser, camera, and cloud storage. The method requires no access to the operating system or stored data, relying solely on the unique electromagnetic signatures of each app.
+Meta's superintelligence initiative progress update reveals the emergence of a top-tier reinforcement learning environment startup and what is described as the most aggressive compute ramp ever seen, spanning over 2000 km. This indicates Meta is making rapid progress in superintelligence R&D, with significant implications for the AI industry and competitive dynamics, particularly for Google DeepMind. The update mentions a new reinforcement learning environment startup, unprecedented compute scaling across 2000+ km, and strategic advice for Google DeepMind, suggesting major infrastructure developments.
 
-telegram · zaihuapd · Jul 8, 16:05
+rss · Semianalysis · Jul 9, 19:16
 
-**Background**: Side-channel attacks exploit physical emanations like electromagnetic radiation to infer sensitive information. Smartphones emit low-frequency electromagnetic signals during operation, and different apps generate distinct patterns. This non-contact digital forensics technique captures those signals from a distance, enabling app identification without touching the device.
+**Background**: Superintelligence refers to artificial intelligence that surpasses human cognitive abilities in virtually all domains. Meta has been investing heavily in AI, particularly in reinforcement learning and large-scale compute infrastructure. The RL environment startup likely provides simulation platforms for training advanced AI agents.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.ckhq.net/html/6c1af61946e47994a7d682373d5f7757.html">中国科研团队研发非接触式智能手机应用识别技术，准确率达99.07%</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/25590891831">什么是 Side Channel Attack（侧信道攻击）？ - 知乎</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#security`, `#privacy`, `#smartphone`, `#electromagnetic signals`, `#side-channel attack`
+**Tags**: `#Meta`, `#Superintelligence`, `#Reinforcement Learning`, `#Compute Scaling`, `#AI Progress`
 
 ---
 
 <a id="item-12"></a>
-## [LineageOS Releases Browser-Based Flashing Tool](https://www.androidauthority.com/lineageos-summertime-update-2026-3685112/) ⭐️ 8.0/10
+## [IMGNet: Face Verification via Sign Patterns Replaces Cosine Similarity](https://www.reddit.com/r/MachineLearning/comments/1urxvxh/i_built_imgnet_a_face_verification_model_that/) ⭐️ 8.0/10
 
-LineageOS has released Lineage Flash Tools, a web-based tool that allows users to flash custom ROMs directly from a browser without needing to install adb and fastboot locally. The team also announced that development of LineageOS 24 based on Android 17 has begun. This lowers the barrier for installing custom ROMs, making it more accessible to less technical users. The upcoming Android 17-based LineageOS 24 shows ongoing commitment to supporting the latest Android versions. The tool supports Fastboot, ADB, and Samsung's Odin protocol, and requires a WebUSB-capable browser like Chrome or Edge. It must be used in conjunction with device-specific Wiki installation guides and does not fully replace traditional flashing methods.
+IMGNet introduces a face verification model that uses sliding window sign pattern matching instead of cosine similarity, achieving 96.27% on LFW with a 10.58 MB model trained on CASIA-WebFace. This work challenges the default use of cosine similarity in face verification by showing that sign pattern consistency can yield competitive results, potentially opening new directions for metric design in embedding-based recognition systems. The model includes a novel SW Block layer that computes multi-scale relational differences, and an IMG Sign MSE Loss defined purely over sign pattern agreement without amplitude dependency. When applied to ArcFace embeddings without retraining, the IMG Sign Score achieves 99.58% on LFW.
 
-telegram · zaihuapd · Jul 9, 01:46
+reddit · r/MachineLearning · /u/img-_- · Jul 9, 18:00
 
-**Background**: WebUSB is a JavaScript API that allows web applications to communicate with USB devices securely, enabling browser-based flashing. Samsung devices typically use Odin protocol instead of fastboot for firmware flashing. A/B OTA streaming installation downloads only the needed parts of an update package to save space and speed up the process.
+**Background**: Face verification typically uses neural networks to map faces into embedding vectors, then compares them using cosine similarity. Cosine similarity measures the angle between vectors, which is sensitive to global direction but ignores local sign patterns. IMGNet instead examines sign patterns across sliding windows, preserving relational structure.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/WebUSB">WebUSB - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Odin_(firmware_flashing_software)">Odin (firmware flashing software) - Wikipedia</a></li>
-<li><a href="https://source.android.com/docs/core/ota/ab">A/B (seamless) system updates | Android Open Source Project</a></li>
+**Tags**: `#face verification`, `#machine learning`, `#embeddings`, `#novel approach`
 
-</ul>
-</details>
+---
 
-**Tags**: `#LineageOS`, `#Android`, `#custom ROM`, `#WebUSB`, `#flashing`
+<a id="item-13"></a>
+## [DJI EV50 drone reaches 8861m over Everest](https://www.163.com/dy/article/L1CUCV940514R9OJ.html) ⭐️ 8.0/10
+
+DJI's unreleased EV50 vertical takeoff and landing (VTOL) drone participated in the 'Peak Mission' Everest scientific expedition, flying to 8,861 meters on the north slope, setting a record for the highest altitude in public testing among similar drones. This achievement demonstrates DJI's capability in high-altitude operations and low-altitude logistics, potentially impacting drone delivery and scientific research in extreme environments. The EV50 is a hybrid-wing drone that can take off and land vertically and switch to fixed-wing cruise. During the 12-day mission, it completed 32 sorties, climbed continuously for 3,730 meters, and still had 30% battery remaining on return.
+
+telegram · zaihuapd · Jul 9, 06:00
+
+**Background**: Vertical takeoff and landing (VTOL) drones combine the advantages of multirotors and fixed-wing aircraft, enabling operation in confined spaces while maintaining efficient long-range flight. High-altitude flights pose challenges due to thin air, cold temperatures, and strong winds. DJI is a leading drone manufacturer, and the EV50 is designed for cargo transport and low-altitude logistics.
+
+**Tags**: `#无人机`, `#大疆`, `#珠峰`, `#航空科技`, `#物流`
+
+---
+
+<a id="item-14"></a>
+## [China's Supercomputing Internet Core Node Launches in Zhengzhou](https://36kr.com/newsflashes/3887797387344387) ⭐️ 8.0/10
+
+On July 9, 2026, the core node of China's National Supercomputing Internet officially launched in Zhengzhou, providing access to over 100,000 domestic AI computing cards. This marks a major milestone in China's national computing infrastructure, creating the largest single pool of domestic AI compute resources under the Supercomputing Internet platform, which will accelerate AI research and development across the country. The node acts as the core for operations management, resource scheduling, and also integrates supply-demand matching and industry incubation services, aiming to build a nationwide computing resource coordination system.
+
+telegram · zaihuapd · Jul 9, 07:00
+
+**Background**: The National Supercomputing Internet is a project to connect supercomputing centers and AI computing resources across China into a unified network. The core node in Zhengzhou is the largest single resource pool connected to this platform, providing massive domestic AI computing capacity.
+
+**Tags**: `#supercomputing`, `#AI infrastructure`, `#domestic computing`, `#China tech`, `#national project`
+
+---
+
+<a id="item-15"></a>
+## [OpenAI and US War Dept to Ban AI for Citizen Surveillance](https://t.me/zaihuapd/42459) ⭐️ 8.0/10
+
+OpenAI and the US Department of War have agreed to revise their AI contract to explicitly prohibit the use of AI systems for monitoring US citizens, a move initiated by OpenAI CEO Sam Altman to address ethical concerns. This sets a significant precedent for ethical AI use in military contracts, potentially influencing other tech companies and government policies to protect civil liberties against AI-driven surveillance. The revised clause specifically bans intentional surveillance of US citizens and prohibits tracking or monitoring using personally identifiable information obtained commercially. The contract amendment has not been formally signed yet.
+
+telegram · zaihuapd · Jul 9, 13:22
+
+**Background**: OpenAI has been expanding its partnerships with US defense agencies, including the Department of War (formerly the Pentagon), raising ethical concerns about AI in warfare. Anthropic, another AI company, previously suspended a similar contract with the War Department due to controversy.
+
+**Tags**: `#AI ethics`, `#OpenAI`, `#military AI`, `#surveillance`, `#AI regulation`
 
 ---
