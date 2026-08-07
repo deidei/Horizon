@@ -5,213 +5,230 @@ date: 2026-08-07
 lang: en
 ---
 
-> From 38 items, 9 important content pieces were selected
+> From 35 items, 11 important content pieces were selected
 
 ---
 
-1. [Chinese-led BESIII Collaboration Confirms Existence of Glueballs](#item-1) ⭐️ 9.0/10
-2. [AMD acquires Taalas to etch AI models into silicon for faster inference](#item-2) ⭐️ 8.0/10
-3. [Mario Kart Characters Illustrate Pareto Frontier Trade-offs](#item-3) ⭐️ 8.0/10
-4. [Human Taste Is the Last Differentiator in AI Coding Era](#item-4) ⭐️ 8.0/10
-5. [Qwen3.8 Max Tops Agentic Index as Best Overall Model](#item-5) ⭐️ 8.0/10
-6. [ByteDance in Early Talks to Train 5+ Trillion-Parameter LLM](#item-6) ⭐️ 8.0/10
-7. [DeepSeek Invests $20.8M in Unitree's Shanghai IPO, Partners on Embodied AI](#item-7) ⭐️ 8.0/10
-8. [OpenAI Upgrades ChatGPT to GPT-5.6, Expands Free Access with Think Button](#item-8) ⭐️ 8.0/10
-9. [Alibaba to Charge Big Users of Next Open-Source Qwen AI Model](#item-9) ⭐️ 8.0/10
+1. [DeepSeek V4 Flash 0731: Fast, Cheap, and Capable Model Update](#item-1) ⭐️ 8.0/10
+2. [Assembly Hall of Shame: A Curated Collection of Extremely Slow x86 Instructions](#item-2) ⭐️ 8.0/10
+3. [Why Everyone in Tech So Sad: Losing Faith in the Industry](#item-3) ⭐️ 8.0/10
+4. [Oracle's OpenJDK Bans AI-Generated Code Contributions](#item-4) ⭐️ 8.0/10
+5. [pgrust Rewrites Postgres in Rust, Claiming 300x Faster Analytics](#item-5) ⭐️ 8.0/10
+6. [2027 HBM Capacity Sold Out, Squeezing DRAM Supply](#item-6) ⭐️ 8.0/10
+7. [Fighting Scrapers: A Year-Long Battle on a 1.5 Million-Page Website](#item-7) ⭐️ 8.0/10
+8. [New Mexico Court Orders Meta to Pay $567M Over Children's Mental Health Harms](#item-8) ⭐️ 8.0/10
+9. [Gemini Stumbles, Google Cloud Profits](#item-9) ⭐️ 8.0/10
+10. [US Reviews China's Offshore Access to Nvidia Chips After AI Breakthroughs](#item-10) ⭐️ 8.0/10
+11. [Critical OAuth flaw in sub2api allows account takeover via email only](#item-11) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Chinese-led BESIII Collaboration Confirms Existence of Glueballs](https://mp.weixin.qq.com/s/pvyNR1lN7QPx3IrpB3WtUg) ⭐️ 9.0/10
+## [DeepSeek V4 Flash 0731: Fast, Cheap, and Capable Model Update](https://arcprize.org/results/deepseek-v4-flash-0731) ⭐️ 8.0/10
 
-The BESIII collaboration, led by Chinese scientists, has provided the first experimental evidence for the existence of glueballs by confirming that the particle X(2370) has glueball-like properties. This breakthrough follows 15 years of research and involved measuring its quantum state properties in 2024. This is a milestone in particle physics, as glueballs were predicted by the standard model but had never been observed before. It validates quantum chromodynamics and could open new avenues for studying the strong interaction. The X(2370) particle was first discovered in 2011 in J/ψ decays, and its quantum numbers were measured to be 0⁻⁺, consistent with a pseudoscalar glueball. The team also identified new decay modes and determined its flavor-singlet nature.
+DeepSeek released the updated V4 Flash 0731 model, an efficiency-optimized Mixture-of-Experts LLM with 284B total parameters and 13B activated parameters. It delivers faster inference, lower cost, and stronger debugging and data-analysis abilities compared with the earlier preview. This release gives developers a compelling open-weight option that combines top-tier coding performance with very low inference costs, narrowing the gap with leading closed-source models. It is particularly relevant for teams building agentic or reasoning-heavy applications on a budget. The model uses a Mixture-of-Experts architecture with 284B total parameters, only 13B activated per token, and supports a 1M-token context window. The 07/31 build is a substantial update over the earlier preview, and a separate V4 Flash-Max variant offers reasoning close to the Pro version with more thinking time.
 
-telegram · zaihuapd · Aug 6, 07:31
+hackernews · tosh · Aug 7, 17:56 · [Discussion](https://news.ycombinator.com/item?id=49214008)
 
-**Background**: Glueballs are hypothetical composite particles consisting solely of gluons, the force carriers of the strong interaction. Unlike ordinary hadrons, they contain no valence quarks, making them unique predictions of quantum chromodynamics. The standard model predicts their existence, but they are difficult to identify because they mix with ordinary meson states. The BESIII experiment at the Beijing Electron-Positron Collider II is a leading facility for studying charm, tau, and light hadron physics.
+**Background**: DeepSeek is an AI lab that releases open-weight large language models, competing with both open and proprietary systems. Mixture-of-Experts (MoE) models keep total parameter counts large but activate only a small subset per token, which cuts compute and cost. V4 Flash is the efficiency-oriented member of the DeepSeek-V4 series, aimed at fast, low-cost inference.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Glueball">Glueball - Wikipedia</a></li>
-<li><a href="https://phys.org/news/2026-08-x2370-emerges-glueball-dominated-particle.html">X(2370) emerges as glueball-dominated particle in collider experiments</a></li>
-<li><a href="https://arxiv.org/abs/2503.13286">[2503.13286] Discovery of a Glueball-like particle X(2370) at BESIII</a></li>
+<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash">deepseek -ai/ DeepSeek - V 4 - Flash · Hugging Face</a></li>
+<li><a href="https://openrouter.ai/deepseek/deepseek-v4-flash">DeepSeek V 4 Flash - API Pricing & Benchmarks | OpenRouter</a></li>
+<li><a href="https://ollama.com/library/deepseek-v4-flash">deepseek - v 4 - flash</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#particle physics`, `#glueball`, `#standard model`, `#BESIII`, `#experimental physics`
+**Discussion**: Community comments are largely positive, with users praising the low cost (spending around $5/day or under $100/month) and high speed, including strong local performance on RTX Pro 6000 Blackwell GPUs. Several users note it is now good enough for almost everything, while one off-topic comment mentions a Claude account ban.
+
+**Tags**: `#AI`, `#DeepSeek`, `#LLM`, `#Model Release`, `#Benchmark`
 
 ---
 
 <a id="item-2"></a>
-## [AMD acquires Taalas to etch AI models into silicon for faster inference](https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344) ⭐️ 8.0/10
+## [Assembly Hall of Shame: A Curated Collection of Extremely Slow x86 Instructions](https://github.com/xoreaxeaxeax/asm-hall-of-shame) ⭐️ 8.0/10
 
-AMD announced the acquisition of Taalas, an AI chip startup that hardwires neural network models directly into silicon to accelerate inference. The deal is intended to advance AMD's compute solutions for the growing AI inference market. The acquisition could give AMD a highly differentiated inference chip that outperforms NVIDIA's GPUs on specific models, potentially undercutting the economics of AI inference. It also highlights a broader industry shift toward model-specific silicon as AI models become commodities. Taalas, a 24-person Toronto startup that had raised $169 million, claims its chip runs Llama 3.1 8B at 17,000 tokens per second — nearly 10 times the throughput of an NVIDIA H200 at a fraction of the cost. The 'Taalas Foundry' platform automates turning trained models into dedicated ASICs, but model weights baked into hardware could quickly become outdated as new model versions are released.
+The GitHub repository 'Assembly Hall of Shame' curates notoriously slow x86 instructions and provides methods for timing them, exposing surprising hardware performance pitfalls. It includes benchmark results such as a 12 ms write to an ACPI IO port, which currently sits at position 8 on the leaderboard. This project highlights that instruction-level performance on modern x86 CPUs is not intuitive and can be off by orders of magnitude, which matters for low-level developers, OS engineers, and security researchers. It also sparked discussion about abusing such slow paths, for example to trigger or break System Management Mode (SMM). The repository enforces a rule that trapped, emulated, or virtualized instructions may only time the trap itself, not the handler, in order to keep measurements meaningful. However, some commenters suspect that the 12 ms write to an ACPI IO port might actually be handled by SMM, which would blur that distinction.
 
-hackernews · itvision · Aug 6, 20:23 · [Discussion](https://news.ycombinator.com/item?id=49201970)
+hackernews · piotrgrabowski · Aug 7, 18:01 · [Discussion](https://news.ycombinator.com/item?id=49214098)
 
-**Background**: Conventional AI inference relies on general-purpose GPUs that can run any model but are less efficient for a fixed workload. Taalas instead converts a model's architecture and weights into a specialized ASIC, effectively 'etching' the model into the chip to remove overhead. The startup emerged from stealth with its approach drawing attention for drastically higher throughput per watt. AMD's acquisition brings this model-specific silicon technology into a major CPU/GPU vendor's portfolio.
+**Background**: x86 processors include many instructions whose execution time varies wildly depending on the operand, addressing mode, and microarchitectural state. Timing is usually done with the Time Stamp Counter (TSC) via the RDTSC instruction, but pitfalls such as out-of-order execution, frequency scaling, and SMM interrupts can distort measurements. Agner Fog's instruction tables and dedicated timing guides document latencies and throughputs for AMD and Intel processors. The project builds on this tradition by collecting real-world examples of instructions that are surprisingly slow.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pVcFBUaEVSSFlvS2RVX2dmTTN5Z0FQAQ?hl=en-PH&gl=PH&ceid=PH:en">Google News - News about Taalas • startup • AI - Overview</a></li>
-<li><a href="https://www.linkedin.com/pulse/top-news-ai-taalas-toronto-startup-etched-model-onto-chip-faxnc">Top News in AI : Taalas : The Toronto Startup That Etched an AI Model...</a></li>
-<li><a href="https://medium.com/garden-research/embedding-intelligence-into-silicon-51ffdc151b69">Embedding Intelligence into Silicon: Deep Dive on Taalas | Garden Research</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Time_Stamp_Counter">Time Stamp Counter - Wikipedia</a></li>
+<li><a href="https://www.agner.org/optimize/instruction_tables.pdf">Introduction Page 1 4. Instruction tables By Agner Fog</a></li>
+<li><a href="https://wassenberg.dreamhosters.com/articles/timing_pitfalls.pdf">Timing Pitfalls and Solutions</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters questioned whether a silicon-etched model would fall behind by one or more versions by the time the chip is released, though some noted there could still be a market for cheaper, older-model inference. Others expressed surprise that OpenAI and Anthropic didn't make this move first to protect their moats, pointing out Google is already experimenting with putting quantized models onto TPUs. One commenter jokingly imagined a black market for chips with famous model weights baked in.
+**Discussion**: The comments reflect broad interest and humor: one user jokes that NOP is infinitely slow relative to what it does, and another connects the project to the Core War game. A more serious exchange questions whether the ACPI port write traps into SMM, linking to a related project that abuses slow instructions to break SMI. Another comment laments how much compute is wasted on abstraction layers, echoing the repo's theme.
 
-**Tags**: `#AI hardware`, `#inference`, `#AMD`, `#acquisitions`, `#machine learning`
+**Tags**: `#assembly`, `#x86`, `#performance`, `#low-level`, `#hardware`
 
 ---
 
 <a id="item-3"></a>
-## [Mario Kart Characters Illustrate Pareto Frontier Trade-offs](https://www.mayerowitz.io/blog/mario-meets-pareto) ⭐️ 8.0/10
+## [Why Everyone in Tech So Sad: Losing Faith in the Industry](https://www.noemamag.com/why-is-everyone-in-tech-so-sad/) ⭐️ 8.0/10
 
-A technical blog post by Mayerowitz uses Mario Kart character stats to explain Pareto frontiers, illustrating how no single character dominates when balancing speed and acceleration. The post received high engagement on Hacker News (863 points, 149 comments). The post makes an abstract optimization concept tangible for developers and game designers, showing how trade-offs define 'equally good' solutions. It resonated widely, sparking community examples ranging from WoW item builds to speedrun character choices. The Pareto frontier, or Pareto front, is the set of solutions where improving one objective necessarily degrades another; the blog explains it via Mario Kart's speed/acceleration trade-off. Commenters noted that speedrunners often pick Bowser/DK at the frontier's edge, while casual players may optimize for different goals, such as losing competitively to kids.
+In a new essay for Noema Magazine, "Why Is Everyone in Tech So Sad?" explores the widespread sadness and loss of faith among technology workers, drawing parallels to the decline of skilled trades such as printing. The author contends that the once-bright promise of a tech career has dimmed, leaving many feeling betrayed by their own industry. This matters because it articulates a widespread burnout and disillusionment that is rarely examined in depth for a group as influential as tech workers. The historical comparison with printers suggests that today's tech professionals may face structural disruption, prompting critical conversations about career longevity and the future of knowledge work. The essay uses the history of printers—a respected craft that was ultimately eliminated by technological change—as a cautionary tale. It also touches on how the very innovations that created modern tech roles may now be devaluing them, leaving workers without a clear sense of direction.
 
-hackernews · theanonymousone · Aug 6, 11:24 · [Discussion](https://news.ycombinator.com/item?id=49195231)
+hackernews · RickJWagner · Aug 7, 12:42 · [Discussion](https://news.ycombinator.com/item?id=49209539)
 
-**Background**: Multi-objective optimization deals with problems that have multiple conflicting objectives, where no single solution can optimize all goals at once. The Pareto front is the set of all Pareto-efficient solutions, meaning any improvement in one objective would worsen another; these concepts apply across engineering, economics, and logistics. In games like Mario Kart, characters' stats create natural trade-offs, making them an intuitive example for visualizing such optimization concepts.
+**Background**: The tech industry has long been perceived as a realm of limitless opportunity, where skilled workers enjoyed high pay and meaningful innovation. In recent years, however, a wave of layoffs, burnout, and declining purpose has given rise to what some call a "tech malaise." By invoking historical parallels like the printing trade, the essay frames today's anxiety not as a personal failure but as part of a larger pattern of industries being upended by their own success.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Pareto_front">Pareto front - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Multi-objective_optimization">Multi-objective optimization</a></li>
+**Discussion**: Community comments strongly resonate with the essay's themes. One user compares tech workers to printers, noting how that trade vanished entirely; others point to the toxicity of the online world and a general erosion of work ethic. Many express personal disillusionment—one veteran of over twenty years says he now daydreams about being homeless, underscoring the depth of dissatisfaction.
 
-</ul>
-</details>
-
-**Discussion**: Commenters largely praised the post; one developer highlighted how the Pareto idea exposes false dichotomies like 'no security without sacrificing UX' — true only if already on the frontier. Others shared related optimizations: a divide-and-conquer approach to WoW Classic item builds, and speedrun data showing Bowser/DK dominate at the frontier's edge. A lighter comment noted many parents optimize for staying competitive but still losing to their kids.
-
-**Tags**: `#pareto-frontier`, `#optimization`, `#game-design`, `#algorithms`, `#trade-offs`
+**Tags**: `#tech culture`, `#burnout`, `#mental health`, `#software engineering`, `#industry analysis`
 
 ---
 
 <a id="item-4"></a>
-## [Human Taste Is the Last Differentiator in AI Coding Era](https://notashelf.dev/posts/taste-is-all-thats-left) ⭐️ 8.0/10
+## [Oracle's OpenJDK Bans AI-Generated Code Contributions](https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code) ⭐️ 8.0/10
 
-In the essay 'Taste Is All That's Left' on notashelf.dev, the author argues that as AI-assisted coding becomes common, human taste and judgment are the remaining differentiators for developers. The post drew 196 points and 155 comments, sparking debate about whether LLM-generated software can match human-crafted quality. This piece offers a timely counterpoint to AI hype, arguing that engineering quality still depends on human aesthetic and ethical judgment. It matters because teams adopting LLM coding tools need to understand the limits of generated code and the enduring value of experienced developers. The essay and discussion emphasize that LLMs may solve immediate problems but 'stacking this on the scale of 3-4 devs over 6 months or so doesn't seem to produce anything.' Commenters also criticized LLM writing quality as having 'almost no signal' and questioned whether taste is a useful concept compared with judgment.
+The OpenJDK project has published an interim policy banning or restricting AI-generated code contributions, as announced in a post on openjdk.org/legal/ai. Oracle's lawyers are still drafting the final version of this policy. This is a significant policy shift for one of the world's most important open-source projects, affecting how Java contributors work and shaping debate on AI provenance in open source. It also highlights the irony that Oracle (led by Larry Ellison) heavily promotes AI while refusing AI-generated code from outside. The policy is explicitly positioned as a risk-management measure, focused on legal provenance rather than purely code quality. The final version is still being written by Oracle's legal team, so the interim rules may change.
 
-hackernews · tsak · Aug 6, 17:01 · [Discussion](https://news.ycombinator.com/item?id=49199346)
+hackernews · delduca · Aug 7, 17:36 · [Discussion](https://news.ycombinator.com/item?id=49213754)
 
-**Background**: AI-assisted coding uses large language models trained on public code to autocomplete, generate, or explain software. As these tools improve, some observers argue that the only human advantage left is taste—the informed, intuitive sense of what is good design. The article builds on a long-standing idea in software craftsmanship that judgment cannot be reduced to rote rules, which is also reflected in Susan Sontag's view that taste governs every free human response.
+**Background**: OpenJDK is the open-source reference implementation of the Java platform, maintained by Oracle and a community of developers. AI-generated code can carry uncertain copyright provenance because models may be trained on licensed or copyrighted code, creating legal risk for projects that accept such contributions. Oracle has a long history of aggressive copyright enforcement around Java, including lawsuits over the Java API.
 
-**Discussion**: Commenters largely reacted with resonance, with an experienced developer since the 1980s agreeing that taste had to be developed through mistakes. Others were more critical, calling the 'artsy fartsy' framing unscientific and preferring 'judgment' over 'taste,' while another complained that LLM-written code and prose lack signal over time.
+**Discussion**: Commenters generally understood the decision as a legal/risk-management move, though many noted the irony with Oracle's own AI push. Some expressed skepticism about the final policy, while others pointed out that the burden on human reviewers is a real concern.
 
-**Tags**: `#AI coding`, `#software engineering`, `#craftsmanship`, `#LLM quality`, `#taste`
+**Tags**: `#OpenJDK`, `#Oracle`, `#AI-generated code`, `#open source policy`, `#software licensing`
 
 ---
 
 <a id="item-5"></a>
-## [Qwen3.8 Max Tops Agentic Index as Best Overall Model](https://artificialanalysis.ai/?intelligence=agentic-index) ⭐️ 8.0/10
+## [pgrust Rewrites Postgres in Rust, Claiming 300x Faster Analytics](https://malisper.me/how-we-made-postgres-hundreds-of-times-faster-the-query-engine/) ⭐️ 8.0/10
 
-Alibaba's Qwen3.8 Max has been ranked as the best overall model on the Artificial Analysis Agentic Index, edging out rivals such as Opus. This is the first time an open-weight Qwen Max-class model has led this agentic benchmark. This milestone underscores how quickly Chinese AI models have caught up with Western frontier labs, and since Qwen Max weights are now open-sourced, it opens the door to running world-class agentic AI on local hardware. It also intensifies competition in the agentic AI space, where benchmark leadership is closely watched by developers and enterprises. The Artificial Analysis Agentic Index is a weighted average of agentic capability benchmarks, and some users observed scores shifting between page loads, highlighting benchmark volatility. Qwen3.8 Max is a 2.4-trillion-parameter sparse Mixture-of-Experts model with roughly 95 billion active parameters per token, a 1-million-token context window, and multimodal input support.
+The blog post 'Making Postgres 300x faster for analytics' introduces pgrust, a Rust-based reimplementation of PostgreSQL that achieves up to 300x speedups on analytical queries via batching, operator fusion, and SIMD. The project is also compiled to WebAssembly, allowing it to run in the browser. This is significant because it challenges the assumption that PostgreSQL's query engine is near its performance ceiling, and shows how modern techniques can deliver order-of-magnitude gains. It could influence future Postgres development and spark broader adoption of adaptive planning and vectorized execution in traditional databases. The speedup comes from three techniques: batching rows to reduce per-tuple overhead, fusing operators to avoid materializing intermediate results, and using SIMD instructions to process multiple values at once. The author emphasizes correctness as the top priority, using formal verification and differential fuzz testing to prove 1,000+ functions match Postgres's logic.
 
-hackernews · apitman · Aug 6, 18:44 · [Discussion](https://news.ycombinator.com/item?id=49200652)
+hackernews · poly2it · Aug 7, 11:00 · [Discussion](https://news.ycombinator.com/item?id=49208535)
 
-**Background**: Agentic AI refers to models that can autonomously plan and execute multi-step tasks, such as debugging code or navigating software. The Artificial Analysis Agentic Index aggregates several standardized benchmarks to measure these abilities. Qwen is Alibaba's family of open-weight large language models; previous smaller models have been popular for local deployment. The new Max-class model represents Alibaba's flagship frontier offering and is the first Max variant to have open-sourced weights.
+**Background**: PostgreSQL is a widely used open-source relational database, but its row-at-a-time executor is slower on analytical workloads than columnar and vectorized systems like ClickHouse. pgrust is an experimental rewrite in Rust meant to show what Postgres could look like if built today; it can compile to WebAssembly and run queries in the browser. Batching, operator fusion, and SIMD are proven techniques in database engines, used by systems like DuckDB, to reduce per-row overhead and better utilize modern CPUs.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://openlm.ai/qwen3.8/">Qwen3.8 | OpenLM.ai</a></li>
-<li><a href="https://artificialanalysis.ai/models/capabilities/agentic">Best AI for Agentic Tasks: LLM Leaderboard | Artificial Analysis</a></li>
-<li><a href="https://www.alibabagroup.com/document-2021044032125272064">Alibaba Unveils Qwen3.8-Max: Its Largest and Most Capable ...</a></li>
+<li><a href="https://github.com/malisper/pgrust">GitHub - malisper/pgrust: Postgres rewritten in Rust, now faster than Postgres and Clickhouse · GitHub</a></li>
+<li><a href="https://pgrust.com/">pgrust — postgres, rewritten in rust</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Comments are largely optimistic about Qwen's progress but wary of benchmark instability. One user praised Qwen's troubleshooting abilities and anticipates a strong local 3.8 small model, while another provided screenshots showing the top ranking flip-flop between Qwen and Opus across page reloads. A few commenters also questioned the credibility of any leaderboard that puts Opus at the top, suggesting hands-on testing matters more than index scores.
+**Discussion**: Author comments state that correctness is top priority, with formal verification and differential fuzz testing proving over 1,000 functions match Postgres. Some commenters question whether a critical database can gain trust outside the official Postgres team, while others are excited about adaptive planning, a feature long resisted by the Postgres core team.
 
-**Tags**: `#AI`, `#Qwen`, `#LLM`, `#benchmarks`, `#agentic AI`
+**Tags**: `#postgres`, `#query-engine`, `#rust`, `#performance`, `#simd`
 
 ---
 
 <a id="item-6"></a>
-## [ByteDance in Early Talks to Train 5+ Trillion-Parameter LLM](https://mp.weixin.qq.com/s/_SGStRsaJmpos2_deXUs8A) ⭐️ 8.0/10
+## [2027 HBM Capacity Sold Out, Squeezing DRAM Supply](https://www.ign.com/articles/ramageddon-continues-another-year-as-2027-memory-capacity-is-reportedly-sold-out) ⭐️ 8.0/10
 
-ByteDance is in early-stage discussions to train a large language model with more than 5 trillion parameters, led by Seed Foundation head Xiang Liang and in collaboration with pretraining data lead Shen Ke. If realized, it would surpass Alibaba's Qwen 3.8-Max and Moonshot AI's K3 as the largest known domestic model in China. This signals ByteDance's ambition to compete at the frontier of AI scale and capability, not just follow existing leaders. Zhang Yiming's push for original research over distillation could reshape China's AI development strategy and intensify the race among domestic labs. The plan is still in very early stages; Zhang Yiming reportedly rejected the distillation approach at a Seed all-hands meeting two weeks ago, arguing it only replicates Claude's existing capabilities. Seed is restructuring, removing the 'horse race' mechanism, and consolidating resources, while acknowledging coding as a key near-term direction integrating Volcengine, Feishu, and Doubao resources.
+Memory industry reports that HBM (High Bandwidth Memory) capacity for 2027 is fully sold out, driven by surging AI demand. This leaves less wafer capacity for commodity DRAM, tightening overall memory supply. This marks a multi-year supply constraint for memory, affecting not just AI accelerators but also consumer electronics like PCs, consoles, and phones. Prices for DRAM and devices could rise, and AI hardware production may be bottlenecked. HBM consumes roughly three times the wafer supply of standard DDR5 to produce the same number of bits on a given technology node, because HBM dies are larger. Since HBM is prioritized, non-HBM DRAM output growth will be limited.
 
-telegram · zaihuapd · Aug 6, 13:10
+hackernews · inigyou · Aug 7, 07:58 · [Discussion](https://news.ycombinator.com/item?id=49207236)
 
-**Background**: ByteDance Seed, established in 2023, is ByteDance's foundation-model research division, known for its broad portfolio including the Doubao-Seed and Seed model series. Chinese AI labs are racing to build ever-larger models: Alibaba's Qwen family, whose flagship Qwen 3.8-Max exceeds 1 trillion parameters, and Moonshot AI's Kimi K3 are among the current leaders that the proposed 5-trillion-parameter model would surpass.
+**Background**: HBM is a 3D-stacked DRAM interface used with GPUs and accelerators, developed by Samsung, AMD, and SK Hynix. It provides much higher bandwidth than regular DRAM by stacking dies vertically and connecting them via through-silicon vias to a logic die. AI model training and inference demand enormous memory bandwidth, making HBM critical.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://seed.bytedance.com/">ByteDance Seed</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Qwen3.8-Max">Qwen3.8-Max</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Moonshot_AI">Moonshot AI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/High_Bandwidth_Memory">High Bandwidth Memory - Wikipedia</a></li>
+<li><a href="https://medium.com/the-low-end-disruptor/the-great-wall-of-high-bandwidth-memory-hbm-4d19b9f48549">The Great Wall of High Bandwidth Memory ( HBM ) | Medium</a></li>
+<li><a href="https://acepcba.com/what-is-hbm-memory-why-does-ai-hardware-need-it/">What Is HBM Memory and Why Does AI Hardware Depend on It ?</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#ByteDance`, `#Large Language Models`, `#AI Strategy`, `#Model Training`, `#Seed Foundation`
+**Discussion**: Commenters expressed concern about broader market effects: one noted HBM capacity 'sold out' means fewer wafers for DDR5, another worried about inflation for consumer products, and one user described an urge to stockpile microcontrollers. Some also reflected on the user-level impact, with one saying AI's memory/storage pressure makes them hesitant to use AI.
+
+**Tags**: `#HBM`, `#memory`, `#semiconductors`, `#supply chain`, `#AI`
 
 ---
 
 <a id="item-7"></a>
-## [DeepSeek Invests $20.8M in Unitree's Shanghai IPO, Partners on Embodied AI](https://www.reuters.com/world/asia-pacific/deepseek-invests-208-million-unitrees-shanghai-ipo-2026-08-06/) ⭐️ 8.0/10
+## [Fighting Scrapers: A Year-Long Battle on a 1.5 Million-Page Website](https://patronview.com/news/99-percent-of-my-website-traffic-is-bots/) ⭐️ 8.0/10
 
-DeepSeek has taken part in the strategic placement of Chinese robotics company Unitree's Shanghai IPO, investing 140.8 million yuan (about $20.8 million) for 933,399 shares, representing 2.31% of the strategic placement. The two Hangzhou-based companies also signed a strategic cooperation agreement to jointly develop AI models for humanoid robots. This investment links a leading AI model developer with a major humanoid robot maker, directly targeting the 'brain' bottleneck of embodied intelligence. The partnership could give DeepSeek scarce physical-world data to improve its multimodal visual models, and give Unitree privileged access to advanced AI training services. According to exchange filings, Unitree will prioritize DeepSeek when purchasing model training services and technical solutions, while DeepSeek will prioritize Unitree when buying robots or carrying out embodied AI applications. The deal is seen as targeting the challenge of creating a robot 'brain' that can understand unfamiliar environments and reliably execute instructions.
+A website owner of a 1.5‑million‑page site published a detailed retrospective of a year spent defending against scrapers and bots, revealing that a single bad month caused hosting costs to jump roughly 500% from a baseline of about $90. The post covers the strategies used, including Cloudflare challenges, and the practical and philosophical costs of fighting bot traffic. This account matters because it quantifies the real operational and financial burden that AI scrapers and bots impose on independent web publishers. It also feeds into the broader industry debate about centralized bot protection (Cloudflare) versus self‑hosted alternatives, and who ultimately controls access to public web content. The site runs on Cloudflare Workers and D1, a serverless SQLite database; a single 'bad spike month' drove the monthly bill from about $90 to roughly 500% higher. The author also acknowledges that the site itself scrapes public documents, noting the irony of a scraper complaining about scrapers.
 
-telegram · zaihuapd · Aug 6, 14:23
+hackernews · petercooper · Aug 7, 14:51 · [Discussion](https://news.ycombinator.com/item?id=49211386)
 
-**Background**: Embodied intelligence (具身智能) refers to intelligent systems that perceive, reason, decide, and act through physical interaction with the environment, a concept that has entered China's national strategic agenda. A strategic placement (战略配售) in an IPO is a targeted allotment of shares to long-term strategic investors, a common practice on China's STAR Market and ChiNext. Multimodal vision models extend large language models by processing image and video inputs; training such models on physical-world robot data remains a key challenge.
+**Background**: Web scraping is the automated extraction of website data, and for site owners it can overwhelm servers and inflate bills when bots consume bandwidth and database queries. Many websites rely on Cloudflare's bot protection, which includes Turnstile, a CAPTCHA‑alternative challenge platform. The rise of AI crawlers such as OpenAI's GPTBot has intensified the volume and sophistication of scraping, making this a growing concern for independent publishers.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.ccf.org.cn/Media_list/gzwyh/jsjsysdwyh/2023-07-22/794317.shtml">具身智能 | CCF专家谈术语-中国计算机学会</a></li>
-<li><a href="https://baike.baidu.com/item/战略配售/68403479">战略配售 - 百度百科</a></li>
-<li><a href="https://blog.csdn.net/2401_84033492/article/details/142678606">一文彻底搞懂多模态 - 多模态理解+视觉大模型+多模态检索_多模态检测-...</a></li>
+<li><a href="https://grokipedia.com/page/Cloudflare_Turnstile">Cloudflare Turnstile</a></li>
+<li><a href="https://datadome.co/bots/gptbot/">What is the GPTBot?</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#具身智能`, `#人形机器人`, `#DeepSeek`, `#投资合作`, `#AI模型`
+**Discussion**: Commenters largely sympathize with the author but split on solutions: some warn against relying on Cloudflare's centralized control and recommend self‑hosted proof‑of‑work tools like Anubis, while others suggest moving off D1 to a static site to cut costs. Several share their own scraper‑related numbers — one notes Claude‑searchbot fetched 205,000 pages in 72 hours while sending just one referral — and highlight the irony that the author's site itself scrapes public documents.
+
+**Tags**: `#web scraping`, `#bot protection`, `#Cloudflare`, `#website security`, `#AI crawlers`
 
 ---
 
 <a id="item-8"></a>
-## [OpenAI Upgrades ChatGPT to GPT-5.6, Expands Free Access with Think Button](https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/) ⭐️ 8.0/10
+## [New Mexico Court Orders Meta to Pay $567M Over Children's Mental Health Harms](https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta) ⭐️ 8.0/10
 
-OpenAI announced updates to ChatGPT, giving Plus and Pro users an improved GPT-5.6 Sol model with more reliable factual answers and a slider to control reasoning depth. Free and Go users will get GPT-5.6 Luna as the default model starting this week, unlimited text chat from next week, and a new Think button for complex reasoning. This update significantly improves factual accuracy — roughly 62–68% fewer factual errors in finance, medical, and legal questions — and expands free-tier access, which could broaden ChatGPT's user base. It signals OpenAI's shift toward reliability and safety as it iterates on the GPT-5.6 family. GPT-5.6 comes in three tiers — Luna, Terra, and Sol — with Sol being the flagship and Luna the fastest, most affordable option. OpenAI also introduced a Think button that lets users trigger deeper reasoning, and strengthened safety training for users under 18, including restrictions on romantic roleplay and age-gated challenges.
+A New Mexico state court ordered Meta to pay $567 million for harming children's mental health through its social media platforms, and to make changes for underage users. The judgment stems from a lawsuit alleging Meta violated public-nuisance law by designing addictive features that harmed minors. This is one of the largest state-level judgments against a major social media company over youth mental health, and could set a precedent for other states and jurisdictions pursuing similar claims. It pressures Meta and the broader industry to rethink algorithmic design and child-safety protections. The ruling leverages New Mexico's public-nuisance law, NMSA 1978 § 30-8-1, rather than federal Section 230 protections. Reports differ on the total amount: Reuters and The Guardian cite $567 million for a teen mental health fund, while The Wall Street Journal reports a $942 million total judgment.
 
-telegram · zaihuapd · Aug 6, 22:39
+hackernews · boplicity · Aug 7, 00:06 · [Discussion](https://news.ycombinator.com/item?id=49204352)
 
-**Background**: GPT-5.6 is a family of large language models released by OpenAI on July 9, 2026, after a limited preview for trusted partners on June 26, 2026. It is designed to expand capabilities across enterprise work, coding, scientific research, and cybersecurity, and competes with other frontier LLMs in the rapidly evolving AI landscape. The new Luna model is positioned as a fast, low-cost option for high-volume tasks, while Sol targets demanding workloads.
+**Background**: Social media companies have faced growing scrutiny over the impact of their platforms on young users' mental health, with studies linking heavy use to anxiety and depression. New Mexico's lawsuit, filed by the state attorney general, sought to hold Meta accountable under state public-nuisance law, an approach that bypasses the federal immunity that protects platforms from being treated as publishers of third-party content.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/GPT-5.6_Sol">GPT-5.6 Sol</a></li>
-<li><a href="https://openai.com/index/gpt-5-6/">GPT‑5.6: Frontier intelligence that scales with your ambition</a></li>
-<li><a href="https://techcrunch.com/2026/08/06/openai-brings-unlimited-chatgpt-text-chats-to-free-users/">ChatGPT brings unlimited text chats to free users | TechCrunch</a></li>
+**Discussion**: Commenters noted that while $567 million or even $942 million is a small fraction of Meta's global revenue, it is a massive penalty when apportioned to New Mexico's 2.1 million residents. One user pointed to the specific public-nuisance statute and the applicable section, while others analogized Instagram Reels and TikTok to addictive substances and urged Meta to change its algorithms.
 
-</ul>
-</details>
-
-**Tags**: `#OpenAI`, `#ChatGPT`, `#GPT-5.6`, `#AI`, `#language models`
+**Tags**: `#social-media`, `#regulation`, `#mental-health`, `#meta`, `#legal`
 
 ---
 
 <a id="item-9"></a>
-## [Alibaba to Charge Big Users of Next Open-Source Qwen AI Model](https://www.reuters.com/business/retail-consumer/alibaba-plans-charge-big-users-its-next-open-source-ai-model-sources-say-2026-08-07/) ⭐️ 8.0/10
+## [Gemini Stumbles, Google Cloud Profits](https://newsletter.semianalysis.com/p/gemini-is-cooked-but-gcp-is-cooking) ⭐️ 8.0/10
 
-According to Reuters, Alibaba plans to introduce revenue-sharing fees for large commercial users of its upcoming open-source Qwen AI model, which is expected to be released next week. This follows a similar licensing move by Chinese AI startup Moonshot for its Kimi K3 model. This signals a broader shift in how Chinese AI companies monetize so-called open-source models, moving from cloud-only fees to usage-based revenue sharing. It could affect enterprises that deploy Qwen on their own infrastructure and reshape competition with US AI firms. Alibaba's specific revenue-sharing percentage is still under discussion, according to the people familiar with the matter. Kimi K3's license requires service providers with annual revenue above $20 million to sign commercial agreements, with a reported share of up to 30%.
+A SemiAnalysis article argues that DeepMind's difficulties with its Gemini AI models will paradoxically boost Google Cloud Platform's short-term growth. The analysis reframes DeepMind's long-term challenges as a short-term tailwind for GCP's cloud infrastructure business. This matters because it highlights a strategic split inside Google between DeepMind's long-term AI ambitions and GCP's commercial momentum. It suggests that even if Google's frontier models fall behind, its cloud arm could still capture significant revenue from the broader AI boom. The core claim is a timing mismatch: DeepMind's long-term failure becomes GCP's short-term gain because demand for AI compute and cloud revenue keeps growing regardless of model quality. The article focuses on business strategy and market dynamics rather than technical benchmarks or specific product releases.
 
-telegram · zaihuapd · Aug 7, 01:29
+rss · Semianalysis · Aug 7, 02:32
 
-**Background**: Qwen is Alibaba's family of large language models, known for strong multilingual and coding capabilities and offered in both open-weights and closed versions. Open-source models are typically downloadable for free, and vendors traditionally earn revenue through paid cloud hosting or enterprise services. By adding revenue-sharing for large commercial users, Alibaba is adopting a hybrid model that keeps smaller developers free while charging high-revenue companies.
+**Background**: Google DeepMind is Google's AI research unit responsible for the Gemini family of large language models, which compete with OpenAI's GPT series. Google Cloud Platform (GCP) sells cloud computing and AI infrastructure services to external customers. The article's argument rests on the observation that a company's own model quality and its cloud infrastructure revenue can diverge, especially when external demand for AI compute is strong.
+
+**Tags**: `#AI`, `#Google Cloud`, `#DeepMind`, `#Strategy`, `#Cloud Computing`
+
+---
+
+<a id="item-10"></a>
+## [US Reviews China's Offshore Access to Nvidia Chips After AI Breakthroughs](https://www.bloomberg.com/news/articles/2026-08-07/us-reviews-china-s-offshore-access-to-nvidia-chips-after-ai-breakthroughs) ⭐️ 8.0/10
+
+The US Commerce Department's Bureau of Industry and Security (BIS) has launched a systematic review of how Chinese AI companies obtain and use Nvidia chips abroad, including via remote access to overseas computing resources. The review was triggered in part by the recent release of Moonshot AI's Kimi K3 model, which a White House official accused of being powered by illegally obtained Nvidia chips accessed remotely from Thailand. This review could expand US export controls beyond hardware sales to cover cloud-based remote computing, directly affecting Nvidia and other US tech companies' ability to serve global customers. It also signals a new front in US-China tech competition, potentially reshaping how AI firms worldwide access advanced chips. BIS is compiling two lists: one of black-market locations suspected of smuggling restricted chips into China, and another of countries where Chinese companies remotely rent chips. The report also alleges that Alibaba, through a Singapore shell company controlled by a Cayman entity, uses Nvidia chips in Malaysia via Megaspeed, a company already under US investigation.
+
+telegram · zaihuapd · Aug 7, 11:18
+
+**Background**: The US has restricted exports of advanced AI chips to China since 2022, but Chinese companies have sought to circumvent these controls by leasing computing power from data centers in other countries. Remote access to chips is not inherently illegal, and it is unclear whether BIS has authority to restrict such cloud computing arrangements. The US House has passed a bipartisan bill to explicitly grant that power, though it is expected to face opposition from Nvidia and other tech companies.
+
+**Tags**: `#US-China tech policy`, `#export controls`, `#AI hardware`, `#Nvidia`, `#cloud computing`
+
+---
+
+<a id="item-11"></a>
+## [Critical OAuth flaw in sub2api allows account takeover via email only](https://github.com/Wei-Shaw/sub2api/issues/5350) ⭐️ 8.0/10
+
+A critical OAuth vulnerability (CVSS 8.8) in sub2api v0.1.171 and earlier allows attackers to take over any account knowing only the victim's email address, without password, captcha, or user interaction. The flaw leverages the pending session flow's existingUser branch to bind an attacker's OAuth identity to the victim's account. This vulnerability enables full account takeover, giving attackers control over API keys, billing balance, and subscription quotas. Since OAuth is widely used, this highlights the importance of verifying identity binding steps in OAuth flows. The exploit targets the pending session flow's existingUser branch, which fails to verify password or captcha when binding an OAuth identity. After binding, every subsequent OAuth login by the attacker resolves to the victim's account.
+
+telegram · zaihuapd · Aug 7, 14:59
+
+**Background**: OAuth 2.0 is a widely used framework that lets users log in to sites using social media accounts. Common OAuth vulnerabilities include redirect URI manipulation, weak CSRF protection, and missing PKCE, but this case stems from an insecure account-binding logic in sub2api. Account takeover occurs when an attacker links their own identity to a victim's existing account, gaining full access.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Kimi_K3">Kimi K3</a></li>
-<li><a href="https://grokipedia.com/page/Qwen_AI_Glasses_G1">Qwen AI Glasses G1</a></li>
+<li><a href="https://portswigger.net/web-security/oauth">OAuth 2.0 authentication vulnerabilities | Web Security Academy</a></li>
+<li><a href="https://outpost24.com/blog/common-oauth-vulnerabilities-mitigations/">7 common OAuth vulnerabilities (plus mitigations)</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#Open Source`, `#Alibaba`, `#Business Model`, `#Qwen`
+**Tags**: `#security`, `#oauth`, `#vulnerability`, `#account-takeover`, `#sub2api`
 
 ---
